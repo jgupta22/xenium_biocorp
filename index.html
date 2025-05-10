@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenium Biocorp - Committed to Health in Rajasthan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom colors based on the flyer */
+        .bg-brand-dark-blue { background-color: #003366; }
+        .text-brand-dark-blue { color: #003366; }
+        .border-brand-dark-blue { border-color: #003366; }
+
+        .bg-brand-light-blue { background-color: #4A90E2; }
+        .text-brand-light-blue { color: #4A90E2; }
+
+        .bg-brand-yellow { background-color: #F5A623; }
+        .text-brand-yellow { color: #F5A623; }
+
+        .bg-brand-gray { background-color: #F0F4F8; }
+        .text-brand-gray { color: #333333; }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://placehold.co/1200x600/E0E0E0/333333?text=Pharmaceutical+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        nav a:hover {
+            color: #F5A623; /* Brand Yellow for hover */
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        /* Mobile menu toggle */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-open {
+            transform: translateX(0%);
+        }
+        .menu-closed {
+            transform: translateX(-100%);
+        }
+
+        /* Styles for Product Pagination */
+        .product-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #CBD5E0; /* Tailwind gray-400 */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product-dot.active-dot {
+            background-color: #F5A623; /* brand-yellow */
+        }
+        /* Ensure product pages are displayed as grid when active */
+        .product-page.active-page {
+            display: grid; /* Or your desired display type, e.g., block */
+        }
+        .about-image {
+            max-height: 350px; /* Or your preferred max height */
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="text-brand-gray antialiased smooth-scroll">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-dark-blue">
+                <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-brand-yellow transition duration-300">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-brand-yellow transition duration-300">About Us</a>
+                <a href="#products" class="text-gray-700 hover:text-brand-yellow transition duration-300">Products</a>
+                <a href="#distribution" class="text-gray-700 hover:text-brand-yellow transition duration-300">Distribution</a>
+                <a href="#contact" class="text-gray-700 hover:text-brand-yellow transition duration-300">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden fixed inset-0 bg-brand-dark-blue bg-opacity-95 p-6 space-y-6 menu-closed">
+            <div class="flex justify-between items-center mb-8">
+                <a href="#" class="text-2xl font-bold text-white">
+                    <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+                </a>
+                <button id="close-mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <a href="#home" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Home</a>
+            <a href="#about" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">About Us</a>
+            <a href="#products" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Products</a>
+            <a href="#distribution" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Distribution</a>
+            <a href="#contact" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Xenium Biocorp: Committed to Health, Dedicated to Rajasthan.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                    Xenium Biocorp is a trusted name in pharmaceuticals, bringing quality and affordable medicines to the people of Rajasthan. With a rich heritage and a new vision for growth, we are expanding our reach and impact.
+                </p>
+                <a href="#products" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">
+                    Explore Our Products
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-16">About Xenium Biocorp</h2>
+
+                <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
+                    <div class="order-1">
+                        <img src="https://placehold.co/600x400/4A90E2/FFFFFF?text=Our+Heritage" alt="Xenium Biocorp Heritage" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    </div>
+                    <div class="space-y-4 order-2">
+                        <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Our Story</h3>
+                        <p class="text-lg leading-relaxed">
+                            Founded decades ago, Xenium Biocorp has a long-standing tradition of serving communities across Rajasthan. We operate on a lean model, partnering with certified contract manufacturers to ensure high-quality production while focusing on effective marketing and distribution. Now, we are embarking on a new chapter of aggressive growth and market leadership.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
+                    <div class="space-y-4 order-2 md:order-1">
+                        <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Mission & Vision</h3>
+                        <p class="text-lg leading-relaxed">
+                            <strong>Mission:</strong> To provide accessible, high-quality pharmaceutical products that improve the health and well-being of individuals and families throughout Rajasthan.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            <strong>Vision:</strong> To be the leading pharmaceutical marketing company in Rajasthan, recognized for our commitment to quality, innovation, and customer satisfaction.
+                        </p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://placehold.co/600x400/F5A623/FFFFFF?text=Our+Future+Vision" alt="Xenium Biocorp Mission and Vision" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+                    <div class="order-1">
+                         <img src="https://placehold.co/600x400/003366/FFFFFF?text=Our+Commitment" alt="Xenium Biocorp Approach" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    </div>
+                    <div class="space-y-4 order-2">
+                        <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Our Approach</h3>
+                        <p class="text-lg leading-relaxed">
+                            We believe in ethical practices, strong partnerships, and a deep understanding of the needs of our customers and healthcare professionals. Our focus is on quality assurance from manufacturing to delivery, ensuring that every product meets the highest standards of safety and efficacy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-16 md:py-24 bg-brand-gray">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Best Sellers</h2>
+                <p class="text-lg text-center max-w-2xl mx-auto mb-12">
+                    Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across Rajasthan for their quality and efficacy.
+                </p>
+
+                <div id="product-page-1" class="product-page active-page grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/4A90E2/FFFFFF?text=XeniFlex" alt="XeniFlex Tablets" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">XeniFlex Tablets</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/4A90E2/FFFFFF?text=LevoGuard" alt="LevoGuard Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">LevoGuard Syrup</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/4A90E2/FFFFFF?text=VitaXen" alt="VitaXen Capsules" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">VitaXen Capsules</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/4A90E2/FFFFFF?text=GastroZen" alt="GastroZen Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">GastroZen Syrup</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/4A90E2/FFFFFF?text=DermaHeal" alt="DermaHeal Cream" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">DermaHeal Cream</h4>
+                    </div>
+                </div>
+
+                <div id="product-page-2" class="product-page hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/F5A623/FFFFFF?text=CardioPro" alt="CardioPro Tablets" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">CardioPro Tablets</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/F5A623/FFFFFF?text=NeuroMax" alt="NeuroMax Capsules" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">NeuroMax Capsules</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/F5A623/FFFFFF?text=PulmoClear" alt="PulmoClear Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">PulmoClear Syrup</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/F5A623/FFFFFF?text=OsteoFort" alt="OsteoFort Tablets" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">OsteoFort Tablets</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x150/F5A623/FFFFFF?text=XeniBiotic" alt="XeniBiotic Ointment" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue">XeniBiotic Ointment</h4>
+                    </div>
+                </div>
+
+                <div id="product-dots-container" class="flex justify-center space-x-3 mt-8">
+                    <button class="product-dot active-dot" data-page="1" aria-label="Go to product page 1"></button>
+                    <button class="product-dot" data-page="2" aria-label="Go to product page 2"></button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="distribution" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Distribution Network & Partnerships</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-brand-dark-blue">Our Reach in Rajasthan</h3>
+                        <p class="text-lg leading-relaxed">
+                            We have a growing network of distributors and pharmacies covering major cities and towns in Rajasthan, ensuring our medicines are available where they are needed. Our commitment is to make quality healthcare accessible across the state.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-brand-dark-blue mt-4">Partner with Us</h3>
+                        <p class="text-lg leading-relaxed">
+                            Xenium Biocorp is actively seeking dynamic and reliable partners to expand its distribution network. If you are a distributor, stockist, or pharmacy looking for a growth-oriented pharmaceutical company to collaborate with, we would love to hear from you.
+                        </p>
+                        <a href="mailto:partnerships@xeniumbiocorp.com?subject=Partnership Inquiry for Xenium Biocorp" class="inline-block bg-brand-light-blue text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-dark-blue transition duration-300">
+                            Become a Partner
+                        </a>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F4F8/333333?text=Rajasthan+Distribution+Map" alt="Distribution Network in Rajasthan" class="rounded-lg shadow-xl w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-brand-gray">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Get In Touch</h2>
+                <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+                    <p class="text-lg text-center mb-8">
+                        We welcome your inquiries. Whether you are a healthcare professional, a potential partner, or a customer, feel free to reach out to us.
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-brand-dark-blue">Corporate Office</h3>
+                            <p class="text-gray-700">
+                                Xenium Biocorp<br>
+                                [Your Street Address]<br>
+                                [Your City, Pin Code], Rajasthan, India
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-brand-dark-blue">Email Us</h3>
+                            <p class="text-gray-700">
+                                For General Inquiries: <a href="mailto:info@xeniumbiocorp.com" class="text-brand-light-blue hover:underline">info@xeniumbiocorp.com</a><br>
+                                For Business Partnerships: <a href="mailto:partnerships@xeniumbiocorp.com" class="text-brand-light-blue hover:underline">partnerships@xeniumbiocorp.com</a><br>
+                                For Product Information: <a href="mailto:products@xeniumbiocorp.com" class="text-brand-light-blue hover:underline">products@xeniumbiocorp.com</a>
+                                </p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-brand-dark-blue">Call Us</h3>
+                            <p class="text-gray-700">
+                                +91-XXX-XXXXXXX
+                            </p>
+                        </div>
+                         <div class="text-center pt-6">
+                             <a href="mailto:info@xeniumbiocorp.com?subject=Inquiry from Xenium Biocorp Website" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">
+                                Send Us an Email
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark-blue text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="text-2xl font-bold">
+                <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            </a>
+            <p class="my-4 text-gray-300">
+                Innovating for a healthier Rajasthan.
+            </p>
+            <div class="flex justify-center space-x-6 mb-6">
+                </div>
+            <p class="text-sm text-gray-400">
+                &copy; <span id="currentYear"></span> Xenium Biocorp. All Rights Reserved.
+            </p>
+            <p class="text-xs text-gray-500 mt-1">
+                Website designed to be simple and informative.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        if (mobileMenuButton && mobileMenu && closeMobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('menu-closed');
+                mobileMenu.classList.add('menu-open');
+            });
+
+            closeMobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('menu-open');
+                mobileMenu.classList.add('menu-closed');
+            });
+        }
+
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('menu-open');
+                    mobileMenu.classList.add('menu-closed');
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#' || this.id === 'close-mobile-menu-button' || this.hostname !== window.location.hostname) {
+                    return;
+                }
+
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const header = document.querySelector('header');
+                    const headerOffset = header ? header.offsetHeight : 0;
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        // Product Pagination Logic
+        const productDotsContainer = document.getElementById('product-dots-container');
+        if (productDotsContainer) {
+            const productDots = productDotsContainer.querySelectorAll('.product-dot');
+            const productPages = [
+                document.getElementById('product-page-1'),
+                document.getElementById('product-page-2')
+            ].filter(page => page !== null); // Filter out nulls if pages don't exist
+
+            productDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const pageNumber = dot.dataset.page;
+
+                    // Deactivate all dots and hide all pages
+                    productDots.forEach(d => d.classList.remove('active-dot'));
+                    productPages.forEach(p => {
+                        if (p) { // Check if page element exists
+                            p.classList.add('hidden');
+                            p.classList.remove('active-page', 'grid'); // Ensure grid is removed
+                        }
+                    });
+
+                    // Activate clicked dot
+                    dot.classList.add('active-dot');
+
+                    // Show corresponding page
+                    const targetPage = document.getElementById(`product-page-${pageNumber}`);
+                    if (targetPage) {
+                        targetPage.classList.remove('hidden');
+                        targetPage.classList.add('active-page', 'grid'); // Ensure grid is applied
+                    }
+                });
+            });
+        }
+
+    </script>
+
+</body>
+</html>
