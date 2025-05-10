@@ -25,7 +25,8 @@
         .text-brand-gray { color: #333333; }
 
         .hero-section {
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://github.com/jgupta22/xenium_biocorp/blob/main/images/background.jpg');
+            /* Corrected GitHub raw image URL */
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/background.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -61,12 +62,19 @@
         }
         /* Ensure product pages are displayed as grid when active */
         .product-page.active-page {
-            display: grid; /* Or your desired display type, e.g., block */
+            display: grid; 
         }
         .about-image {
-            max-height: 350px; /* Or your preferred max height */
+            max-height: 350px; 
             object-fit: cover;
             width: 100%;
+        }
+        .product-image { /* Added class for consistent product image styling */
+            width: 100%;
+            height: 150px; /* Fixed height for product images */
+            object-fit: contain; /* Use 'contain' to show full image, 'cover' to fill */
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -74,8 +82,7 @@
 
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-brand-dark-blue">
-                <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            <a href="#home" class="text-2xl font-bold text-brand-dark-blue"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
             </a>
             <nav class="hidden md:flex space-x-6">
                 <a href="#home" class="text-gray-700 hover:text-brand-yellow transition duration-300">Home</a>
@@ -94,8 +101,7 @@
         </div>
         <div id="mobile-menu" class="md:hidden fixed inset-0 bg-brand-dark-blue bg-opacity-95 p-6 space-y-6 menu-closed">
             <div class="flex justify-between items-center mb-8">
-                <a href="#" class="text-2xl font-bold text-white">
-                    <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+                <a href="#home" class="text-2xl font-bold text-white"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
                 </a>
                 <button id="close-mobile-menu-button" class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +143,7 @@
                     <div class="space-y-4 order-2">
                         <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Our Story</h3>
                         <p class="text-lg leading-relaxed">
-                            Founded decades ago, Xenium Biocorp has a long-standing tradition of serving communities across Rajasthan. We operate on a lean model, partnering with certified contract manufacturers to ensure high-quality production while focusing on effective marketing and distribution. Now, we are embarking on a new chapter of aggressive growth and market leadership.
+                            Founded decades ago, Xenium Biocorp has a long-standing tradition of serving communities across Rajasthan. We operate on a lean model, partnering with certified contract manufacturers to ensure high-quality production while focusing on effective marketing and distribution. Founder, Birbal Gupta has been a pioneer in the pharmaceutical industry for more than 40 years.
                         </p>
                     </div>
                 </div>
@@ -146,10 +152,10 @@
                     <div class="space-y-4 order-2 md:order-1">
                         <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Mission & Vision</h3>
                         <p class="text-lg leading-relaxed">
-                            <strong>Mission:</strong> To provide accessible, high-quality pharmaceutical products that improve the health and well-being of individuals and families throughout Rajasthan.
+                            <strong>Mission:</strong> To provide accessible, high-quality pharmaceutical products that improve the health and well-being of individuals and families throughout India.
                         </p>
                         <p class="text-lg leading-relaxed">
-                            <strong>Vision:</strong> To be the leading pharmaceutical marketing company in Rajasthan, recognized for our commitment to quality, innovation, and customer satisfaction.
+                            <strong>Vision:</strong> To be the leading pharmaceutical company in India, recognized for our commitment to quality, innovation, and customer satisfaction.
                         </p>
                     </div>
                     <div class="order-1 md:order-2">
@@ -173,48 +179,47 @@
 
         <section id="products" class="py-16 md:py-24 bg-brand-gray">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Best Sellers</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Products</h2>
                 <p class="text-lg text-center max-w-2xl mx-auto mb-12">
                     Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across India for their quality and efficacy.
                 </p>
 
-                <div id="product-page-1" class="product-page active-page grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-6">
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/AceclozenP.jpg" alt="XeniFlex Tablets" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Aceclozen P</h4>
+                <div id="product-page-1" class="product-page active-page grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg" alt="Aceclozen P" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen P</h4>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/AceclozenSP.jpg" alt="LevoGuard Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Aceclozen SRp</h4>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.jpg" alt="Aceclozen SP" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen SP</h4>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/Calcizen.jpg" alt="VitaXen Capsules" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Calcizen/h4>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg" alt="Calcizen" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen</h4>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/CalcizenK2.jpg" alt="GastroZen Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Calcizen-K2</h4>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/Combid.jpg" alt="DermaHeal Cream" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Combid</h4>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.jpg" alt="Calcizen-K2" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen-K2</h4>
                     </div>
                 </div>
 
-                <div id="product-page-2" class="product-page hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-6">
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/Doxizen.jpg" alt="CardioPro Tablets" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Doxizen</h4>
+                <div id="product-page-2" class="product-page hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg" alt="Combid" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Combid</h4>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/GastridomLSR.jpg" alt="NeuroMax Capsules" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">Gastridom-LSR</h4>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg" alt="Doxizen" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Doxizen</h4>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://github.com/jgupta22/xenium_biocorp/blob/main/products/LycomaxForte.jpg" alt="PulmoClear Syrup" class="rounded-md mb-3 w-full h-auto object-cover mx-auto" style="max-height: 150px;" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-                        <h4 class="text-md font-semibold text-brand-dark-blue">LycomaxForte</h4>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/GastridomLSR.jpg" alt="Gastridom-LSR" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Gastridom-LSR</h4>
                     </div>
-            
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+                        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/LycomaxForte.jpg" alt="Lycomax Forte" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+                        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Lycomax Forte</h4>
+                    </div>
                 </div>
 
                 <div id="product-dots-container" class="flex justify-center space-x-3 mt-8">
@@ -223,7 +228,6 @@
                 </div>
             </div>
         </section>
-
 
         <section id="distribution" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
@@ -268,9 +272,8 @@
                         <div>
                             <h3 class="text-xl font-semibold text-brand-dark-blue">Email Us</h3>
                             <p class="text-gray-700">
-                                For General Inquiries and Partnerships: <a href="mailto:xeniumbiocorp@gmail.com" class="text-brand-light-blue hover:underline">xeniumbiocorp@gmail.com</a><br>
-                               
-                                </p>
+                                For General Inquiries and Partnerships: <a href="mailto:xeniumbiocorp@gmail.com" class="text-brand-light-blue hover:underline">xeniumbiocorp@gmail.com</a>
+                               </p>
                         </div>
                         <div>
                             <h3 class="text-xl font-semibold text-brand-dark-blue">Call Us</h3>
@@ -291,8 +294,7 @@
 
     <footer class="bg-brand-dark-blue text-white py-12">
         <div class="container mx-auto px-6 text-center">
-            <a href="#" class="text-2xl font-bold">
-                <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            <a href="#home" class="text-2xl font-bold"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
             </a>
             <p class="my-4 text-gray-300">
                 Innovating for a healthier India
@@ -343,6 +345,7 @@
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                // Do not prevent default for mobile menu close button or external links
                 if (this.getAttribute('href') === '#' || this.id === 'close-mobile-menu-button' || this.hostname !== window.location.hostname) {
                     return;
                 }
@@ -353,7 +356,7 @@
 
                 if (targetElement) {
                     const header = document.querySelector('header');
-                    const headerOffset = header ? header.offsetHeight : 0;
+                    const headerOffset = header ? header.offsetHeight : 0; // Get header height if it exists
                     const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
                     const offsetPosition = elementPosition - headerOffset;
 
@@ -383,7 +386,7 @@
                     productPages.forEach(p => {
                         if (p) { // Check if page element exists
                             p.classList.add('hidden');
-                            p.classList.remove('active-page', 'grid'); // Ensure grid is removed
+                            p.classList.remove('active-page', 'grid'); 
                         }
                     });
 
@@ -394,7 +397,7 @@
                     const targetPage = document.getElementById(`product-page-${pageNumber}`);
                     if (targetPage) {
                         targetPage.classList.remove('hidden');
-                        targetPage.classList.add('active-page', 'grid'); // Ensure grid is applied
+                        targetPage.classList.add('active-page', 'grid'); 
                     }
                 });
             });
