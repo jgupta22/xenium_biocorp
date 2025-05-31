@@ -25,7 +25,6 @@
         .text-brand-gray { color: #333333; }
 
         .hero-section {
-            /* Corrected GitHub raw image URL */
             background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/background.jpg');
             background-size: cover;
             background-position: center;
@@ -47,8 +46,8 @@
             transform: translateX(-100%);
         }
 
-        /* Styles for Product Pagination */
-        .product-dot {
+        /* Styles for Product & Gallery Pagination */
+        .product-dot, .gallery-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
@@ -57,24 +56,79 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        .product-dot.active-dot {
+        .product-dot.active-dot, .gallery-dot.active-dot {
             background-color: #F5A623; /* brand-yellow */
         }
-        /* Ensure product pages are displayed as grid when active */
-        .product-page.active-page {
-            display: grid; 
+        /* Ensure product/gallery pages are displayed as grid when active */
+        .product-page.active-page, .gallery-page.active-page {
+            display: grid;
         }
         .about-image {
-            max-height: 350px; 
+            max-height: 350px;
             object-fit: cover;
             width: 100%;
         }
-        .product-image { /* Added class for consistent product image styling */
+        .product-image {
             width: 100%;
-            height: 150px; /* Fixed height for product images */
-            object-fit: contain; /* Use 'contain' to show full image, 'cover' to fill */
+            height: 150px;
+            object-fit: contain;
             margin-left: auto;
             margin-right: auto;
+        }
+        /* Gallery Styles */
+        .gallery-item img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        /* Gallery Modal Styles */
+        .gallery-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .gallery-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .gallery-modal-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+        }
+        .gallery-modal-content img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .gallery-modal-close {
+            position: absolute;
+            top: -40px; /* Adjust as needed */
+            right: 0px; /* Adjust as needed */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 50%;
+            line-height: 1;
         }
     </style>
 </head>
@@ -88,6 +142,8 @@
                 <a href="#home" class="text-gray-700 hover:text-brand-yellow transition duration-300">Home</a>
                 <a href="#about" class="text-gray-700 hover:text-brand-yellow transition duration-300">About Us</a>
                 <a href="#products" class="text-gray-700 hover:text-brand-yellow transition duration-300">Products</a>
+                <a href="#gallery" class="text-gray-700 hover:text-brand-yellow transition duration-300">Gallery</a>
+                <a href="blog.html" class="text-gray-700 hover:text-brand-yellow transition duration-300">Blog</a>
                 <a href="#distribution" class="text-gray-700 hover:text-brand-yellow transition duration-300">Distribution</a>
                 <a href="#contact" class="text-gray-700 hover:text-brand-yellow transition duration-300">Contact Us</a>
             </nav>
@@ -112,6 +168,8 @@
             <a href="#home" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Home</a>
             <a href="#about" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">About Us</a>
             <a href="#products" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Products</a>
+            <a href="#gallery" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Gallery</a>
+            <a href="blog.html" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Blog</a>
             <a href="#distribution" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Distribution</a>
             <a href="#contact" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Contact Us</a>
         </div>
@@ -119,26 +177,25 @@
 
     <main>
         <section id="home" class="hero-section text-white py-20 md:py-32">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-2 text-brand-yellow">
-            Xenium Biocorp
-        </h1>
-        <h2 class="text-xl md:text-2xl font-medium italic text-brand-light-blue mb-6">
-            Committed to Health, Dedicated to India
-        </h2>
-        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Xenium Biocorp is a trusted name in pharmaceuticals, bringing quality and affordable medicines to the people of India. With a rich heritage and a new vision for growth, we are expanding our reach and impact.
-        </p>
-        <a href="#products" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">
-            Explore Our Products
-        </a>
-    </div>
-</section>
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-2 text-brand-yellow">
+                    Xenium Biocorp
+                </h1>
+                <h2 class="text-xl md:text-2xl font-medium italic text-brand-light-blue mb-6">
+                    Committed to Health, Dedicated to India
+                </h2>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                    Xenium Biocorp is a trusted name in pharmaceuticals, bringing quality and affordable medicines to the people of India. With a rich heritage and a new vision for growth, we are expanding our reach and impact.
+                </p>
+                <a href="#products" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">
+                    Explore Our Products
+                </a>
+            </div>
+        </section>
 
         <section id="about" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-16">About Xenium Biocorp</h2>
-
                 <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
                     <div class="order-1">
                         <img src="https://placehold.co/600x400/4A90E2/FFFFFF?text=Our+Heritage" alt="Xenium Biocorp Heritage" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
@@ -150,7 +207,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
                     <div class="space-y-4 order-2 md:order-1">
                         <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Mission & Vision</h3>
@@ -165,7 +221,6 @@
                         <img src="https://placehold.co/600x400/F5A623/FFFFFF?text=Our+Future+Vision" alt="Xenium Biocorp Mission and Vision" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
                     </div>
                 </div>
-
                 <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
                     <div class="order-1">
                          <img src="https://placehold.co/600x400/003366/FFFFFF?text=Our+Commitment" alt="Xenium Biocorp Approach" class="rounded-lg shadow-xl w-full about-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
@@ -186,7 +241,6 @@
                 <p class="text-lg text-center max-w-2xl mx-auto mb-12">
                     Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across India for their quality and efficacy.
                 </p>
-
                 <div id="product-page-1" class="product-page active-page grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                     <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
                         <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg" alt="Aceclozen P" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
@@ -205,7 +259,6 @@
                         <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen-K2</h4>
                     </div>
                 </div>
-
                 <div id="product-page-2" class="product-page hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                     <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
                         <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg" alt="Combid" class="rounded-md mb-3 product-image" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
@@ -224,10 +277,57 @@
                         <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Lycomax Forte</h4>
                     </div>
                 </div>
-
                 <div id="product-dots-container" class="flex justify-center space-x-3 mt-8">
                     <button class="product-dot active-dot" data-page="1" aria-label="Go to product page 1"></button>
                     <button class="product-dot" data-page="2" aria-label="Go to product page 2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Our Facility & Warehouse</h2>
+                <p class="text-lg text-center max-w-2xl mx-auto mb-12">
+                    A glimpse into our state-of-the-art warehouse and operational facilities, ensuring quality and efficiency.
+                </p>
+
+                {/* */}
+                <div id="gallery-page-1" class="gallery-page active-page grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/003366/FFFFFF?text=Warehouse+View+1" alt="Warehouse Image 1" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/4A90E2/FFFFFF?text=Facility+Area+2" alt="Facility Image 2" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/F5A623/FFFFFF?text=Storage+Unit+3" alt="Warehouse Image 3" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/F0F4F8/333333?text=Logistics+Hub+4" alt="Facility Image 4" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                </div>
+
+                {/* */}
+                <div id="gallery-page-2" class="gallery-page hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/003366/FFFFFF?text=Packaging+Zone+5" alt="Warehouse Image 5" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/4A90E2/FFFFFF?text=Quality+Check+6" alt="Facility Image 6" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/F5A623/FFFFFF?text=Dispatch+Area+7" alt="Warehouse Image 7" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x300/F0F4F8/333333?text=Office+Space+8" alt="Facility Image 8" class="w-full h-64 object-cover gallery-image">
+                    </div>
+                </div>
+                 {/* */}
+
+                <div id="gallery-dots-container" class="flex justify-center space-x-3 mt-8">
+                    <button class="gallery-dot active-dot" data-page="1" aria-label="Go to gallery page 1"></button>
+                    <button class="gallery-dot" data-page="2" aria-label="Go to gallery page 2"></button>
+                    {/* */}
                 </div>
             </div>
         </section>
@@ -313,6 +413,14 @@
         </div>
     </footer>
 
+    <div id="galleryModal" class="gallery-modal">
+        <span class="gallery-modal-close" id="galleryModalClose">&times;</span>
+        <div class="gallery-modal-content">
+            <img src="" alt="Enlarged Gallery Image" id="modalImage">
+        </div>
+    </div>
+
+
     <script>
         // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -335,12 +443,15 @@
             });
         }
 
-
         mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (mobileMenu) {
+            link.addEventListener('click', (e) => {
+                if (mobileMenu && mobileMenu.classList.contains('menu-open')) {
                     mobileMenu.classList.remove('menu-open');
                     mobileMenu.classList.add('menu-closed');
+                }
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    // Smooth scroll handled by dedicated function
                 }
             });
         });
@@ -348,21 +459,20 @@
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                // Do not prevent default for mobile menu close button or external links
-                if (this.getAttribute('href') === '#' || this.id === 'close-mobile-menu-button' || this.hostname !== window.location.hostname) {
+                if (this.getAttribute('href') === '#' || this.id === 'close-mobile-menu-button') {
                     return;
                 }
-
+                if (this.hostname !== window.location.hostname || this.pathname !== window.location.pathname) {
+                    return;
+                }
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-
                 if (targetElement) {
                     const header = document.querySelector('header');
-                    const headerOffset = header ? header.offsetHeight : 0; // Get header height if it exists
+                    const headerOffset = header ? header.offsetHeight : 0;
                     const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
                     const offsetPosition = elementPosition - headerOffset;
-
                     window.scrollTo({
                         top: offsetPosition,
                         behavior: "smooth"
@@ -378,18 +488,47 @@
             const productPages = [
                 document.getElementById('product-page-1'),
                 document.getElementById('product-page-2')
-            ].filter(page => page !== null); // Filter out nulls if pages don't exist
+            ].filter(page => page !== null);
 
             productDots.forEach(dot => {
                 dot.addEventListener('click', () => {
                     const pageNumber = dot.dataset.page;
-
-                    // Deactivate all dots and hide all pages
                     productDots.forEach(d => d.classList.remove('active-dot'));
                     productPages.forEach(p => {
-                        if (p) { // Check if page element exists
+                        if (p) {
                             p.classList.add('hidden');
-                            p.classList.remove('active-page', 'grid'); 
+                            p.classList.remove('active-page', 'grid');
+                        }
+                    });
+                    dot.classList.add('active-dot');
+                    const targetPage = document.getElementById(`product-page-${pageNumber}`);
+                    if (targetPage) {
+                        targetPage.classList.remove('hidden');
+                        targetPage.classList.add('active-page', 'grid');
+                    }
+                });
+            });
+        }
+
+        // Gallery Pagination Logic - NEW
+        const galleryDotsContainer = document.getElementById('gallery-dots-container');
+        if (galleryDotsContainer) {
+            const galleryDots = galleryDotsContainer.querySelectorAll('.gallery-dot');
+            const galleryPages = [ // Add more page IDs if you have more gallery pages
+                document.getElementById('gallery-page-1'),
+                document.getElementById('gallery-page-2')
+            ].filter(page => page !== null);
+
+            galleryDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const pageNumber = dot.dataset.page;
+
+                    // Deactivate all dots and hide all pages
+                    galleryDots.forEach(d => d.classList.remove('active-dot'));
+                    galleryPages.forEach(p => {
+                        if (p) {
+                            p.classList.add('hidden');
+                            p.classList.remove('active-page', 'grid');
                         }
                     });
 
@@ -397,12 +536,47 @@
                     dot.classList.add('active-dot');
 
                     // Show corresponding page
-                    const targetPage = document.getElementById(`product-page-${pageNumber}`);
+                    const targetPage = document.getElementById(`gallery-page-${pageNumber}`);
                     if (targetPage) {
                         targetPage.classList.remove('hidden');
-                        targetPage.classList.add('active-page', 'grid'); 
+                        targetPage.classList.add('active-page', 'grid');
                     }
                 });
+            });
+        }
+
+
+        // Gallery Modal Logic
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const modal = document.getElementById('galleryModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModalButton = document.getElementById('galleryModalClose');
+
+        if (modal && modalImage && closeModalButton) {
+            galleryImages.forEach(image => {
+                image.addEventListener('click', () => {
+                    modalImage.src = image.src;
+                    modalImage.alt = image.alt;
+                    modal.classList.add('active');
+                });
+            });
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+            };
+
+            closeModalButton.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) { // Close if clicked on background
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
             });
         }
 
