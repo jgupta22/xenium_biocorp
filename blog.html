@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Xenium Biocorp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom colors (same as main page) */
+        .bg-brand-dark-blue { background-color: #003366; }
+        .text-brand-dark-blue { color: #003366; }
+        .border-brand-dark-blue { border-color: #003366; }
+
+        .bg-brand-light-blue { background-color: #4A90E2; }
+        .text-brand-light-blue { color: #4A90E2; }
+
+        .bg-brand-yellow { background-color: #F5A623; }
+        .text-brand-yellow { color: #F5A623; }
+
+        .bg-brand-gray { background-color: #F0F4F8; }
+        .text-brand-gray { color: #333333; }
+
+        nav a:hover {
+            color: #F5A623; /* Brand Yellow for hover */
+        }
+        /* Mobile menu toggle */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-open {
+            transform: translateX(0%);
+        }
+        .menu-closed {
+            transform: translateX(-100%);
+        }
+        .blog-post-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        /* Style for the active Blog link in navigation */
+        nav a[href="blog.html"], #mobile-menu a[href="blog.html"] {
+            color: #F5A623; /* Brand Yellow for active page */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="text-brand-gray antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            {/* */}
+            <a href="index.html#home" class="text-2xl font-bold text-brand-dark-blue"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home" class="text-gray-700 hover:text-brand-yellow transition duration-300">Home</a>
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-yellow transition duration-300">About Us</a>
+                <a href="index.html#products" class="text-gray-700 hover:text-brand-yellow transition duration-300">Products</a>
+                <a href="index.html#gallery" class="text-gray-700 hover:text-brand-yellow transition duration-300">Gallery</a>
+                <a href="blog.html" class="text-gray-700 hover:text-brand-yellow transition duration-300">Blog</a>
+                <a href="index.html#distribution" class="text-gray-700 hover:text-brand-yellow transition duration-300">Distribution</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-yellow transition duration-300">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden fixed inset-0 bg-brand-dark-blue bg-opacity-95 p-6 space-y-6 menu-closed">
+            <div class="flex justify-between items-center mb-8">
+                 <a href="index.html#home" class="text-2xl font-bold text-white"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+                </a>
+                <button id="close-mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <a href="index.html#home" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Home</a>
+            <a href="index.html#about" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">About Us</a>
+            <a href="index.html#products" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Products</a>
+            <a href="index.html#gallery" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Gallery</a>
+            <a href="blog.html" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Blog</a>
+            <a href="index.html#distribution" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Distribution</a>
+            <a href="index.html#contact" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="bg-brand-gray py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-brand-dark-blue mb-8">Pharma Insights & News</h1>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-16 text-gray-700">
+                Stay updated with the latest in pharmaceutical advancements, product information, and health tips from Xenium Biocorp. Explore our articles below.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg blog-post-card flex flex-col">
+                    <img src="https://placehold.co/600x400/4A90E2/FFFFFF?text=Blog+Post+1" alt="Blog Post 1 Image" class="rounded-md mb-4 h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    <h3 class="text-xl font-semibold text-brand-dark-blue mb-2">The Future of Generic Medicines in India</h3>
+                    <p class="text-gray-600 text-sm mb-1">May 28, 2024</p>
+                    <p class="text-gray-700 leading-relaxed mb-4 flex-grow">
+                        An overview of the growing importance of generic drugs and their impact on healthcare accessibility in the Indian market. We delve into policy changes, manufacturing advancements, and the role of companies like Xenium Biocorp.
+                    </p>
+                    <a href="single-post-1.html" class="text-brand-light-blue hover:text-brand-yellow font-semibold self-start">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg blog-post-card flex flex-col">
+                    <img src="https://placehold.co/600x400/F5A623/FFFFFF?text=Blog+Post+2" alt="Blog Post 2 Image" class="rounded-md mb-4 h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    <h3 class="text-xl font-semibold text-brand-dark-blue mb-2">Understanding Common Drug Interactions</h3>
+                    <p class="text-gray-600 text-sm mb-1">May 20, 2024</p>
+                    <p class="text-gray-700 leading-relaxed mb-4 flex-grow">
+                        A guide to help patients and healthcare providers navigate potential drug interactions for safer medication management. Learn about common culprits and tips for discussing your medications with your doctor.
+                    </p>
+                    <a href="single-post-2.html" class="text-brand-light-blue hover:text-brand-yellow font-semibold self-start">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg blog-post-card flex flex-col">
+                    <img src="https://placehold.co/600x400/003366/FFFFFF?text=Blog+Post+3" alt="Blog Post 3 Image" class="rounded-md mb-4 h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    <h3 class="text-xl font-semibold text-brand-dark-blue mb-2">Xenium Biocorp's Commitment to Quality Assurance</h3>
+                    <p class="text-gray-600 text-sm mb-1">May 15, 2024</p>
+                    <p class="text-gray-700 leading-relaxed mb-4 flex-grow">
+                        Learn about the rigorous processes we follow, from sourcing raw materials to final product distribution, to ensure every Xenium Biocorp product meets the highest standards of safety and efficacy.
+                    </p>
+                    <a href="single-post-3.html" class="text-brand-light-blue hover:text-brand-yellow font-semibold self-start">Read More &rarr;</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg blog-post-card flex flex-col">
+                    <img src="https://placehold.co/600x400/4A90E2/FFFFFF?text=Blog+Post+4" alt="Blog Post 4 Image" class="rounded-md mb-4 h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+                    <h3 class="text-xl font-semibold text-brand-dark-blue mb-2">Navigating Seasonal Allergies: Tips and Treatments</h3>
+                    <p class="text-gray-600 text-sm mb-1">June 5, 2024</p>
+                    <p class="text-gray-700 leading-relaxed mb-4 flex-grow">
+                        As seasons change, allergies can become a major concern. This post explores common allergens, symptoms, and effective ways to manage them, including lifestyle adjustments and available medications.
+                    </p>
+                    <a href="single-post-4.html" class="text-brand-light-blue hover:text-brand-yellow font-semibold self-start">Read More &rarr;</a>
+                </div>
+            </div>
+
+            {/* */}
+            <div class="mt-16 flex justify-center items-center space-x-2">
+                <a href="#" class="px-4 py-2 bg-brand-light-blue text-white rounded-md hover:bg-brand-dark-blue transition-colors">Previous</a>
+                <span class="px-4 py-2 text-gray-700">Page 1 of 3</span>
+                <a href="#" class="px-4 py-2 bg-brand-light-blue text-white rounded-md hover:bg-brand-dark-blue transition-colors">Next</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark-blue text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <a href="index.html#home" class="text-2xl font-bold"> <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+            </a>
+            <p class="my-4 text-gray-300">
+                Innovating for a healthier India
+            </p>
+            <div class="flex justify-center space-x-6 mb-6">
+                </div>
+            <p class="text-sm text-gray-400">
+                &copy; <span id="currentYear"></span> Xenium Biocorp. All Rights Reserved.
+            </p>
+            <p class="text-xs text-gray-500 mt-1">
+                Website designed to be simple and informative.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link'); // Ensure this selector is correct for blog.html
+
+        if (mobileMenuButton && mobileMenu && closeMobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('menu-closed');
+                mobileMenu.classList.add('menu-open');
+            });
+
+            closeMobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('menu-open');
+                mobileMenu.classList.add('menu-closed');
+            });
+        }
+
+        // Close mobile menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('menu-open');
+                    mobileMenu.classList.add('menu-closed');
+                }
+            });
+        });
+
+        // Note: Smooth scroll for anchor links within this page is not needed
+        // as all primary navigation links point to index.html or blog.html itself.
+        // If you add internal #links on blog.html, you'd replicate the smooth scroll logic.
+    </script>
+
+</body>
+</html>
