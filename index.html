@@ -204,83 +204,98 @@
       </div>
     </section>
 
-    <section id="products" class="py-16 md:py-24 bg-brand-gray">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Products</h2>
-        <p class="text-lg text-center max-w-2xl mx-auto mb-12">
-          Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across India for their quality and efficacy.
-        </p>
+   <section id="products" class="py-16 md:py-24 bg-brand-gray">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Products</h2>
+    <p class="text-lg text-center max-w-2xl mx-auto mb-12">
+      Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across India for their quality and efficacy.
+    </p>
 
-        <!-- Product page 1 -->
-        <div id="product-page-1" class="product-page active-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-          <!-- Product 1: using <picture> pattern so you can swap in AVIF/WebP variants later -->
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <picture>
-              <!-- Replace these srcset entries with AVIF/WebP variants served from your CDN when available -->
-              <source type="image/avif" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.avif">
-              <source type="image/webp" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.webp">
-              <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg" alt="Aceclozen P" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300">
-            </picture>
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen P</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <picture>
-              <source type="image/avif" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.avif">
-              <source type="image/webp" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.webp">
-              <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.jpg" alt="Aceclozen SP" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300">
-            </picture>
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen SP</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <picture>
-              <source type="image/avif" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.avif">
-              <source type="image/webp" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.webp">
-              <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg" alt="Calcizen" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300">
-            </picture>
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <picture>
-              <source type="image/avif" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.avif">
-              <source type="image/webp" srcset="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.webp">
-              <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.jpg" alt="Calcizen-K2" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300">
-            </picture>
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen-K2</h4>
-          </div>
-        </div>
-
-        <!-- Product page 2 (hidden by default) -->
-        <div id="product-page-2" class="product-page hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg" alt="Combid" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Combid</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg" alt="Doxizen" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Doxizen</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/GastridomLSR.jpg" alt="Gastridom-LSR" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Gastridom-LSR</h4>
-          </div>
-
-          <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/LycomaxForte.jpg" alt="Lycomax Forte" class="rounded-md mb-3 product-image" loading="lazy" decoding="async" width="400" height="300" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-            <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Lycomax Forte</h4>
-          </div>
-        </div>
-
-        <div id="product-dots-container" class="flex justify-center space-x-3 mt-8" role="tablist" aria-label="Product pages">
-          <button class="product-dot active-dot" data-page="1" aria-label="Go to product page 1"></button>
-          <button class="product-dot" data-page="2" aria-label="Go to product page 2"></button>
-        </div>
+    <!-- Product page 1 -->
+    <div id="product-page-1" class="product-page active-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg" 
+             alt="Aceclozen P" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen P</h4>
       </div>
-    </section>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.jpg" 
+             alt="Aceclozen SP" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen SP</h4>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg" 
+             alt="Calcizen" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen</h4>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.jpg" 
+             alt="Calcizen-K2" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen-K2</h4>
+      </div>
+    </div>
+
+    <!-- Product page 2 -->
+    <div id="product-page-2" class="product-page hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg" 
+             alt="Combid" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Combid</h4>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg" 
+             alt="Doxizen" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Doxizen</h4>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/GastridomLSR.jpg" 
+             alt="Gastridom-LSR" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Gastridom-LSR</h4>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
+        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/LycomaxForte.jpg" 
+             alt="Lycomax Forte" 
+             class="rounded-md mb-3 product-image" 
+             loading="lazy" decoding="async" width="400" height="300"
+             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
+        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Lycomax Forte</h4>
+      </div>
+    </div>
+
+    <!-- Pagination dots -->
+    <div id="product-dots-container" class="flex justify-center space-x-3 mt-8" role="tablist" aria-label="Product pages">
+      <button class="product-dot active-dot" data-page="1" aria-label="Go to product page 1"></button>
+      <button class="product-dot" data-page="2" aria-label="Go to product page 2"></button>
+    </div>
+  </div>
+</section>
 
     <section id="gallery" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-6">
