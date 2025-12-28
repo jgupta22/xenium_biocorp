@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xenium Biocorp | Pharma Marketing Company in India & Distributor in Rajasthan</title>
 
+  <!-- Favicon / Logo -->
+  <!-- Upload 'favicon.png' to your images folder on GitHub -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -80,6 +85,8 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#home" class="text-2xl font-bold text-brand-dark flex items-center gap-2" aria-label="Xenium Biocorp Home">
+        <!-- Logo Image Placeholder (Optional - if you want logo in header too) -->
+        <!-- <img src="images/favicon.png" alt="Logo" class="h-8 w-8"> -->
         <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
       </a>
 
@@ -123,6 +130,9 @@
     <!-- HERO SECTION -->
     <section id="home" class="hero-section text-white py-24 md:py-32 flex items-center relative">
       <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="inline-block px-3 py-1 bg-brand-accent/20 border border-brand-accent rounded-full text-brand-accent text-sm font-semibold mb-6 tracking-wide">
+            Est. 2003 • Jaipur, Rajasthan
+        </div>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
           Quality Medicines, Built on <br/><span class="text-brand-accent">Trusted Partnerships</span>
         </h1>
@@ -130,26 +140,62 @@
           As a premier <strong>pharmaceutical distributor in Rajasthan</strong> and marketing company, Xenium Biocorp ensures consistent supply and ethical promotion of high-quality formulations across India.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="products.html" class="bg-brand-accent text-brand-dark font-bold py-3 px-8 rounded-lg hover:bg-white transition duration-300 transform hover:scale-105 shadow-lg">View Products</a>
+          <a href="products.html" class="bg-brand-accent text-brand-dark font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-brand-dark transition duration-300 transform hover:scale-105 shadow-xl">View Products</a>
           <a href="distribution.html" class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-brand-dark transition duration-300 shadow-lg">Partner With Us</a>
         </div>
       </div>
     </section>
 
-    <!-- WHAT WE DO -->
-    <section class="py-16 bg-white -mt-10 relative z-20">
+    <!-- TRUST METRICS STRIP -->
+    <section class="bg-brand-dark border-t border-brand-light/30 py-6 relative z-20">
       <div class="container mx-auto px-6">
-        <h2 class="sr-only">Our Services - Pharma Marketing and Distribution</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+          <div class="p-2">
+            <p class="text-3xl font-bold text-brand-accent">20+</p>
+            <p class="text-xs uppercase tracking-wider text-gray-300 mt-1">Years Experience</p>
+          </div>
+          <div class="p-2 border-l border-brand-light/20">
+            <p class="text-3xl font-bold text-brand-accent">50+</p>
+            <p class="text-xs uppercase tracking-wider text-gray-300 mt-1">Formulations</p>
+          </div>
+          <div class="p-2 border-l border-brand-light/20">
+             <p class="text-3xl font-bold text-brand-accent">10+</p>
+             <p class="text-xs uppercase tracking-wider text-gray-300 mt-1">Districts Covered</p>
+          </div>
+          <div class="p-2 border-l border-brand-light/20">
+            <p class="text-3xl font-bold text-brand-accent">100%</p>
+            <p class="text-xs uppercase tracking-wider text-gray-300 mt-1">Quality Compliant</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCIES (Redesigned "What We Do") -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Core Competencies</h2>
+            <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">We combine robust distribution networks with high-quality third-party manufacturing to serve the healthcare ecosystem.</p>
+        </div>
         <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-light hover:-translate-y-1 transition duration-300">
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-light hover:-translate-y-2 transition duration-300 group">
+            <div class="w-16 h-16 bg-white text-brand-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Branded Formulations</h3>
             <p class="text-gray-600">We market a selective range of <strong>third-party manufactured pharma products</strong>, built for everyday clinical needs.</p>
           </div>
-          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-accent hover:-translate-y-1 transition duration-300">
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-accent hover:-translate-y-2 transition duration-300 group">
+             <div class="w-16 h-16 bg-white text-brand-accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+             </div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Regional Strength</h3>
             <p class="text-gray-600">Our distributor and stockist network enables predictable availability across key districts, solidifying our role as a top <strong>pharma company in Jaipur</strong>.</p>
           </div>
-          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-dark hover:-translate-y-1 transition duration-300">
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-dark hover:-translate-y-2 transition duration-300 group">
+             <div class="w-16 h-16 bg-white text-brand-dark rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+             </div>
             <h3 class="text-xl font-bold text-brand-dark mb-3">Quality Oversight</h3>
             <p class="text-gray-600">We retain full responsibility for partner selection, batch documentation review, and post-market feedback.</p>
           </div>
@@ -157,69 +203,46 @@
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">About Xenium Biocorp</h2>
-          <div class="w-20 h-1 bg-brand-accent mx-auto mt-4"></div>
-          <p class="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
-            Established over two decades ago, Xenium Biocorp has grown into a trusted <strong>pharma marketing company in India</strong>. Based in Jaipur, we bridge the gap between quality manufacturing and reliable distribution.
-          </p>
+    <!-- COMPLIANCE BAR (New Trust Signal) -->
+    <section class="bg-white border-y border-gray-100 py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Visual placeholders for standards - using text/icon combo for flexibility -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="font-bold text-brand-dark text-lg">GMP Certified Partners</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                     <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span class="font-bold text-brand-dark text-lg">ISO 9001 Standards</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                     <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <span class="font-bold text-brand-dark text-lg">Quality Assured</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <div>
-             <img src="images/story.webp" alt="Story" class="rounded-lg shadow-xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://placehold.co/600x600/E0E0E0/333333?text=Xenium+Office+Jaipur'">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-brand-gray">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+             <img src="images/story.webp" alt="Xenium Biocorp Office Jaipur" class="rounded-lg shadow-2xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif'; this.onerror=null;">
           </div>
-          <div class="space-y-6">
-            <h3 class="text-2xl font-bold text-brand-dark">Our Story</h3>
+          <div class="space-y-6 order-1 md:order-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Building Trust Since 2003</h2>
+            <div class="w-20 h-1 bg-brand-accent"></div>
+            <p class="text-gray-700 leading-relaxed text-lg">
+              Established over two decades ago, Xenium Biocorp has grown into a trusted <strong>pharma marketing company in India</strong>. Based in Jaipur, we bridge the gap between quality manufacturing and reliable distribution.
+            </p>
             <p class="text-gray-700 leading-relaxed text-lg">
               Xenium Biocorp was founded with the objective of serving regional healthcare markets with reliability. We grew by understanding local distribution realities and the needs of pharmacists across Rajasthan.
             </p>
-            <p class="text-gray-700 leading-relaxed text-lg">
-              By focusing on a lean model, we collaborate with certified partners for <strong>third-party manufactured pharma products</strong> while maintaining strict internal quality control.
-            </p>
-            <div class="mt-4">
-               <a href="about.html" class="inline-block bg-white text-brand-light font-bold border-2 border-brand-light py-2 px-6 rounded-lg hover:bg-brand-light hover:text-white transition duration-300">Read Our Story &rarr;</a>
+            <div class="mt-6">
+               <a href="about.html" class="inline-block bg-brand-dark text-white font-bold py-3 px-8 rounded hover:bg-brand-light transition duration-300">Read Our Story &rarr;</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OUR APPROACH -->
-    <section class="py-20 bg-brand-gray">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-brand-dark">Our Approach</h2>
-          <p class="text-gray-600 mt-4 text-lg">Guided by reliability, safety, and ethical distribution practices.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
-            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
-               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-            </div>
-            <h3 class="text-xl font-bold text-brand-dark mb-3">Focused Portfolio</h3>
-            <p class="text-gray-600">Addressing everyday clinical needs with consistent supply chains across Rajasthan.</p>
-          </div>
-          <!-- Card 2 -->
-          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
-            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <h3 class="text-xl font-bold text-brand-dark mb-3">Quality Oversight</h3>
-            <p class="text-gray-600">Rigorous checks on documentation and packaging before any product enters our distribution network.</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
-            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            </div>
-            <h3 class="text-xl font-bold text-brand-dark mb-3">Ethical Marketing</h3>
-            <p class="text-gray-600">Sustainable growth through ethical promotion and long-term <strong>pharma distribution partnerships</strong>.</p>
           </div>
         </div>
       </div>
@@ -228,11 +251,15 @@
     <!-- LEADERSHIP SECTION -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
-        <div class="bg-brand-dark text-white rounded-2xl p-10 md:p-16">
-          <h3 class="text-3xl font-bold mb-10 text-center text-brand-accent">Our Leadership</h3>
-          <p class="text-center text-gray-300 max-w-2xl mx-auto mb-16 text-lg">Driven by decades of experience in the Indian pharmaceutical trade.</p>
+        <div class="bg-brand-dark text-white rounded-2xl p-10 md:p-16 shadow-2xl relative overflow-hidden">
+          <!-- Background decoration -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-brand-light opacity-10 rounded-full -mr-16 -mt-16"></div>
+          <div class="absolute bottom-0 left-0 w-40 h-40 bg-brand-accent opacity-10 rounded-full -ml-10 -mb-10"></div>
+
+          <h3 class="text-3xl font-bold mb-10 text-center text-brand-accent relative z-10">Our Leadership</h3>
+          <p class="text-center text-gray-300 max-w-2xl mx-auto mb-16 text-lg relative z-10">Driven by decades of experience in the Indian pharmaceutical trade.</p>
           
-          <div class="grid md:grid-cols-2 gap-12">
+          <div class="grid md:grid-cols-2 gap-12 relative z-10">
             <!-- Leader 1 -->
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
               <h4 class="text-2xl font-bold text-white mb-2">Birbal Gupta</h4>
@@ -263,9 +290,9 @@
         <!-- Sample Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <!-- Product 1 -->
-          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/AceclozenP.webp" alt="Aceclozen P - Pain Relief Medicine" class="h-full w-auto product-image" loading="lazy">
+              <img src="products/AceclozenP.webp" alt="Aceclozen P - Pain Relief Medicine" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Aceclozen P</h4>
@@ -274,9 +301,9 @@
             </div>
           </div>
            <!-- Product 2 -->
-           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Calcizen.webp" alt="Calcizen - Calcium Supplement" class="h-full w-auto product-image" loading="lazy">
+              <img src="products/Calcizen.webp" alt="Calcizen - Calcium Supplement" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Calcizen</h4>
@@ -285,9 +312,9 @@
             </div>
           </div>
           <!-- Product 3 -->
-          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Combid.webp" alt="Combid - Gastro Medicine" class="h-full w-auto product-image" loading="lazy">
+              <img src="products/Combid.webp" alt="Combid - Gastro Medicine" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Combid</h4>
@@ -296,9 +323,9 @@
             </div>
           </div>
           <!-- Product 4 -->
-          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Doxizen.webp" alt="Doxizen - Antibiotic" class="h-full w-auto product-image" loading="lazy">
+              <img src="products/Doxizen.webp" alt="Doxizen - Antibiotic" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Doxizen</h4>
@@ -309,7 +336,7 @@
         </div>
 
         <div class="text-center">
-            <a href="products.html" class="inline-block bg-brand-accent text-brand-dark font-bold py-3 px-10 rounded-lg hover:bg-white hover:shadow-lg transition duration-300 text-lg border-2 border-brand-accent">View Full Product Catalog</a>
+            <a href="productspage.html" class="inline-block bg-brand-accent text-brand-dark font-bold py-3 px-10 rounded-lg hover:bg-white hover:shadow-lg transition duration-300 text-lg border-2 border-brand-accent">View Full Product Catalog</a>
         </div>
       </div>
     </section>
@@ -325,16 +352,16 @@
             </p>
             <ul class="space-y-4">
               <li class="flex items-start">
-                <svg class="w-6 h-6 text-brand-light mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <svg class="w-6 h-6 text-green-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 <span class="text-gray-700"><strong>Partner Qualification:</strong> Only licensed, GMP-compliant manufacturers.</span>
               </li>
               <li class="flex items-start">
-                <svg class="w-6 h-6 text-brand-light mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <svg class="w-6 h-6 text-green-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 <span class="text-gray-700"><strong>Batch Documentation:</strong> Thorough internal review before release.</span>
               </li>
             </ul>
             <div class="mt-8">
-               <a href="quality.html" class="inline-block bg-white text-brand-light font-bold border-2 border-brand-light py-2 px-6 rounded-lg hover:bg-brand-light hover:text-white transition duration-300">View Framework &rarr;</a>
+               <a href="quality.html" class="inline-block bg-white text-brand-dark font-bold border-2 border-brand-dark py-2 px-6 rounded hover:bg-brand-dark hover:text-white transition duration-300">View Framework &rarr;</a>
             </div>
           </div>
           <div class="bg-gray-100 rounded-lg p-8 shadow-inner">
@@ -377,7 +404,7 @@
 
           <div class="relative">
              <div class="absolute -inset-2 bg-brand-light/20 rounded-xl transform rotate-2"></div>
-             <img src="images/map.webp" alt="Pharmaceutical Distribution Network in Rajasthan" class="relative rounded-lg shadow-xl w-full h-auto" loading="lazy">
+             <img src="images/map.webp" alt="Pharmaceutical Distribution Network in Rajasthan" class="relative rounded-lg shadow-xl w-full h-auto" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/map.avif'; this.onerror=null;">
           </div>
         </div>
       </div>
@@ -393,23 +420,23 @@
            <div id="slider-track" class="flex transition-transform duration-500 ease-out">
               <!-- Slide 1 -->
               <div class="min-w-full">
-                 <img src="images/office1.webp" alt="Xenium Corporate Office" class="w-full h-64 md:h-96 object-cover">
+                 <img src="images/office1.webp" alt="Xenium Corporate Office" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/003366/FFFFFF?text=Corporate+Office';">
               </div>
               <!-- Slide 2 -->
               <div class="min-w-full">
-                 <img src="images/office_sh1.webp" alt="Office Reception Area" class="w-full h-64 md:h-96 object-cover">
+                 <img src="images/office_sh1.webp" alt="Office Reception Area" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/4A90E2/FFFFFF?text=Reception';">
               </div>
                <!-- Slide 3 -->
               <div class="min-w-full">
-                 <img src="images/office5.webp" alt="Conference Room" class="w-full h-64 md:h-96 object-cover">
+                 <img src="images/office5.webp" alt="Conference Room" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F5A623/333333?text=Conference+Room';">
               </div>
                <!-- Slide 4 -->
               <div class="min-w-full">
-                 <img src="images/outside1.webp" alt="Operations Team" class="w-full h-64 md:h-96 object-cover">
+                 <img src="images/outside1.webp" alt="Operations Team" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/333333/FFFFFF?text=Operations+Team';">
               </div>
                <!-- Slide 5 -->
               <div class="min-w-full">
-                 <img src="images/warehouse.webp" alt="Distribution Warehouse" class="w-full h-64 md:h-96 object-cover">
+                 <img src="images/warehouse.webp" alt="Distribution Warehouse" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F0F4F8/003366?text=Warehouse';">
               </div>
            </div>
 
