@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharma Product Portfolio | Third Party Manufactured Pharma Products</title>
+  <meta name="description" content="Explore Xenium Biocorp's range of third party manufactured pharma products including Pain Management, Gastro, and Nutrition formulations available in Rajasthan." />
+  <meta name="keywords" content="third party manufactured pharma products, pharma products list India, pharmaceutical formulations Rajasthan" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#003366', light: '#4A90E2', accent: '#F5A623', gray: '#F0F4F8', text: '#333333'
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>.product-image { object-fit: contain; mix-blend-mode: multiply; }</style>
+</head>
+<body class="text-brand-text antialiased bg-gray-50 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+        <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
+      </a>
+      <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wide">
+        <a href="index.html" class="text-gray-600 hover:text-brand-accent transition">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-brand-accent transition">About</a>
+        <a href="products.html" class="text-brand-accent transition">Products</a>
+        <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
+        <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
+        <a href="pharmacovigilance.html" class="text-gray-600 hover:text-brand-accent transition">Safety</a>
+        <a href="index.html#contact" class="px-4 py-2 bg-brand-dark text-white rounded hover:bg-brand-light transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Page Header -->
+    <div class="bg-brand-dark text-white py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold mb-2">Our Products</h1>
+        <p class="text-brand-light text-lg">Quality Third-Party Manufactured Pharma Products</p>
+      </div>
+    </div>
+
+    <section class="py-20 bg-brand-gray">
+      <div class="container mx-auto px-6">
+        
+        <!-- Categories Info -->
+        <div class="bg-white p-8 rounded-lg shadow-sm mb-12 border border-gray-100">
+           <div class="grid md:grid-cols-2 gap-8">
+             <div>
+               <h3 class="text-xl font-bold text-brand-dark mb-4">Focus Areas</h3>
+               <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Pain Management</li>
+                  <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Gastrointestinal Care</li>
+                  <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Nutrition & Supplements</li>
+                  <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Anti-Infectives</li>
+               </ul>
+             </div>
+             <div>
+               <h3 class="text-xl font-bold text-brand-dark mb-4">Quality Assurance</h3>
+               <p class="text-gray-600 text-sm leading-relaxed">
+                 Xenium Biocorp ensures that all our <strong>third-party manufactured pharma products</strong> originate from licensed facilities following strict GMP guidelines. We perform rigorous internal reviews of key batch and packaging documentation before release.
+               </p>
+             </div>
+           </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          
+          <!-- Product 1 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/AceclozenP.webp" alt="Aceclozen P" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Aceclozen+P';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Aceclozen P</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Aceclofenac + Paracetamol</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded font-semibold">Pain Mgmt</span>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/AceclozenSP.webp" alt="Aceclozen SP" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Aceclozen+SP';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Aceclozen SP</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Aceclofenac + Para + Serratiopeptidase</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded font-semibold">Pain Mgmt</span>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Calcizen.webp" alt="Calcizen" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Calcizen';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Calcizen</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Calcium + Vitamin D3</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-green-100 text-green-700 text-xs rounded font-semibold">Nutrition</span>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/CalcizenK2.webp" alt="Calcizen K2" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Calcizen+K2';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Calcizen-K2</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Calcium + Vit D3 + K2-7</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-green-100 text-green-700 text-xs rounded font-semibold">Nutrition</span>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Combid.webp" alt="Combid" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Combid';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Combid</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Pharmaceutical Formulation</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded font-semibold">Gastro</span>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Doxizen.webp" alt="Doxizen" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Doxizen';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Doxizen</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Doxycycline Capsule</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded font-semibold">Antibiotic</span>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/GastridomLSR.webp" alt="Gastridom-LSR" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Gastridom-LSR';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Gastridom-LSR</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Levosulpiride + Rabeprazole</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded font-semibold">Gastro</span>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/LycomaxForte.webp" alt="Lycomax Forte" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Lycomax+Forte';">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Lycomax Forte</h4>
+              <div class="w-full h-px bg-gray-100 my-2"></div>
+              <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Composition</p>
+              <p class="text-sm text-gray-700 font-medium">Lycopene + Multivitamins</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-green-100 text-green-700 text-xs rounded font-semibold">Nutrition</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center bg-blue-50 p-6 rounded-lg">
+          <p class="text-sm text-gray-600">
+            <strong>Important Notice:</strong> Product information on this website is intended for general awareness only. Detailed prescribing information should be reviewed by qualified healthcare professionals.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-dark text-white py-8 border-t border-gray-800 text-center">
+    <div class="container mx-auto px-6">
+      <p class="text-sm text-gray-400">&copy; <script>document.write(new Date().getFullYear())</script> Xenium Biocorp. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
