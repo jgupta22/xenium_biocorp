@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharmacovigilance & Patient Safety | Xenium Biocorp</title>
+  <meta name="description" content="Xenium Biocorp is dedicated to patient safety. Report adverse events or safety concerns related to our products here." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#003366', light: '#4A90E2', accent: '#F5A623', gray: '#F0F4F8', text: '#333333'
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="text-brand-text antialiased bg-gray-50 flex flex-col min-h-screen">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+        <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
+      </a>
+      <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wide">
+        <a href="index.html" class="text-gray-600 hover:text-brand-accent transition">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-brand-accent transition">About</a>
+        <a href="products.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
+        <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
+        <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
+        <a href="pharmacovigilance.html" class="text-brand-accent transition">Safety</a>
+        <a href="index.html#contact" class="px-4 py-2 bg-brand-dark text-white rounded hover:bg-brand-light transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <div class="bg-red-50 py-20 text-center">
+      <div class="container mx-auto px-6">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-red-100 text-red-600 rounded-full mb-6">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        </div>
+        <h1 class="text-4xl font-bold text-brand-dark mb-4">Patient Safety & Pharmacovigilance</h1>
+        <p class="text-gray-700 max-w-2xl mx-auto text-lg">
+          Xenium Biocorp is committed to patient safety and responsible product monitoring. We encourage the reporting of adverse events, product complaints, or safety-related concerns.
+        </p>
+      </div>
+    </div>
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="grid md:grid-cols-2 gap-12">
+          
+          <div class="bg-white border border-gray-200 p-8 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">Report an Event</h2>
+            <p class="text-gray-600 mb-6">
+              If you experience or witness an adverse event related to a Xenium Biocorp product, please report it immediately.
+            </p>
+            <div class="space-y-4">
+              <p class="font-semibold text-gray-800">Please include:</p>
+              <ul class="list-disc list-inside text-gray-600 space-y-1 ml-2">
+                <li>Product name</li>
+                <li>Batch number (if available)</li>
+                <li>Description of the event</li>
+                <li>Patient demographics (Age/Gender only)</li>
+              </ul>
+            </div>
+            <div class="mt-8">
+               <a href="mailto:pv@xeniumbiocorp.com" class="block w-full bg-red-600 text-white font-bold py-3 px-6 rounded hover:bg-red-700 transition text-center">
+                Email: xeniumbiocorp@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h2 class="text-xl font-bold text-brand-dark mb-4">Important Information</h2>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              <strong>Confidentiality:</strong> All reports are handled confidentially and reviewed in coordination with our manufacturing partners where required.
+            </p>
+            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+              <strong>Medical Advice:</strong> We cannot provide medical advice. If you have a medical emergency, please contact your doctor or visit the nearest hospital immediately.
+            </p>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Data Privacy:</strong> Please do not share sensitive patient-identifying information (such as patient names) through website forms or unencrypted email.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-dark text-white py-8 border-t border-gray-800 text-center">
+    <div class="container mx-auto px-6">
+      <p class="text-sm text-gray-400">&copy; <script>document.write(new Date().getFullYear())</script> Xenium Biocorp. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
