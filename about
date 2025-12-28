@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Xenium Biocorp - Pharma Company in Jaipur</title>
+  <meta name="description" content="Learn about Xenium Biocorp, a leading pharma marketing company in India. Founded by industry veterans in Jaipur, we focus on integrity and quality distribution." />
+  <meta name="keywords" content="pharma company Jaipur, pharma marketing company India, Birbal Gupta Xenium, Kuldeep Singh Xenium" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#003366', light: '#4A90E2', accent: '#F5A623', gray: '#F0F4F8', text: '#333333'
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="text-brand-text antialiased bg-gray-50 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+        <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
+      </a>
+      <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wide">
+        <a href="index.html" class="text-gray-600 hover:text-brand-accent transition">Home</a>
+        <a href="about.html" class="text-brand-accent transition">About</a>
+        <a href="products.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
+        <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
+        <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
+        <a href="pharmacovigilance.html" class="text-gray-600 hover:text-brand-accent transition">Safety</a>
+        <a href="index.html#contact" class="px-4 py-2 bg-brand-dark text-white rounded hover:bg-brand-light transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- Page Header -->
+    <div class="bg-brand-dark text-white py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold mb-2">About Us</h1>
+        <p class="text-brand-light text-lg">Decades of Trust in Pharma Distribution</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-start mb-20">
+          <div>
+             <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif" alt="Xenium Biocorp Team Jaipur" class="rounded-lg shadow-xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://placehold.co/600x600/E0E0E0/333333?text=Xenium+Office+Jaipur'">
+          </div>
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-2xl font-bold text-brand-dark mb-2">Our Story</h3>
+              <p class="text-gray-700 leading-relaxed text-lg">
+                Xenium Biocorp was founded with the objective of serving regional healthcare markets with reliability and integrity. As a prominent <strong>pharma company in Jaipur</strong>, we grew by understanding local distribution realities and staying close to the needs of pharmacists and clinicians across Rajasthan.
+              </p>
+              <p class="text-gray-700 leading-relaxed text-lg mt-4">
+                Instead of investing in large manufacturing facilities, we chose a focused model. Xenium works with certified third-party manufacturers while retaining oversight on partner selection and quality, allowing us to operate efficiently as a modern <strong>pharma marketing company in India</strong>.
+              </p>
+            </div>
+            
+             <div>
+              <h3 class="text-2xl font-bold text-brand-dark mb-6">Our Approach</h3>
+              <div class="grid grid-cols-1 gap-6">
+                 <div class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand-light/10 text-brand-light rounded-full flex items-center justify-center mr-4 mt-1">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-bold text-brand-dark">Focused Portfolio</h4>
+                      <p class="text-gray-600">Addressing everyday clinical needs with consistent supply.</p>
+                    </div>
+                 </div>
+                 <div class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand-light/10 text-brand-light rounded-full flex items-center justify-center mr-4 mt-1">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-bold text-brand-dark">Quality Oversight</h4>
+                      <p class="text-gray-600">Rigorous checks on documentation, packaging, and partners.</p>
+                    </div>
+                 </div>
+                 <div class="flex items-start">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand-light/10 text-brand-light rounded-full flex items-center justify-center mr-4 mt-1">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-bold text-brand-dark">Ethical Marketing</h4>
+                      <p class="text-gray-600">Growth driven by clear communication and integrity.</p>
+                    </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="bg-brand-gray rounded-2xl p-8 md:p-12 mb-16 border border-gray-200">
+          <h3 class="text-3xl font-bold mb-12 text-center text-brand-dark">Our Leadership</h3>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Birbal Gupta -->
+            <div class="flex flex-col items-center text-center">
+              <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6 bg-gray-200">
+                <img src="images/Birbal.webp" alt="Birbal Gupta - Co-founder Xenium Biocorp" class="w-full h-full object-cover">
+              </div>
+              <h4 class="text-2xl font-bold text-brand-dark">Birbal Gupta</h4>
+              <p class="text-brand-light text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder</p>
+              <p class="text-gray-600 text-lg leading-relaxed max-w-sm">With over four decades of experience in the pharmaceutical trade, Birbal Gupta has played a key role in building Xenium’s distributor relationships and operational foundation in Rajasthan.</p>
+            </div>
+
+            <!-- Kuldeep Singh -->
+            <div class="flex flex-col items-center text-center md:border-l border-gray-300 md:pl-12">
+              <h4 class="text-2xl font-bold text-brand-dark mt-4">Kuldeep Singh</h4>
+              <p class="text-brand-light text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder</p>
+              <p class="text-gray-600 text-lg leading-relaxed max-w-sm">Kuldeep Singh brings hands-on experience in pharma marketing and partner coordination, contributing to portfolio development and market expansion.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-dark text-white py-8 border-t border-gray-800 text-center">
+    <div class="container mx-auto px-6">
+      <p class="text-sm text-gray-400">&copy; <script>document.write(new Date().getFullYear())</script> Xenium Biocorp. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
