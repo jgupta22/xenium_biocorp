@@ -1,617 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xenium Biocorp - Committed to Health in India</title>
+  <title>Xenium Biocorp | Pharma Marketing Company in India & Distributor in Rajasthan</title>
 
-  <!-- Primary Meta -->
-  <meta name="description" content="Xenium Biocorp — trusted pharmaceutical company in Rajasthan, India. Quality medicines, distributor partnerships and timely supply." />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Primary Meta for SEO -->
+  <meta name="description" content="Xenium Biocorp is a leading pharma marketing company in Jaipur, Rajasthan. We specialize in third-party manufactured pharma products and reliable pharmaceutical distribution partnerships across India." />
+  <meta name="keywords" content="pharma marketing company India, pharmaceutical distributor Rajasthan, pharma company Jaipur, third party manufactured pharma products, pharma distribution partnership" />
   <link rel="canonical" href="https://www.xeniumbiocorp.com/" />
   <meta name="robots" content="index,follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Xenium Biocorp — Committed to Health in India" />
-  <meta property="og:description" content="Trusted manufacturer & distributor of high-quality, affordable pharmaceutical products across Rajasthan and India." />
+  <meta property="og:title" content="Xenium Biocorp - Quality Medicines, Trusted Partnerships" />
+  <meta property="og:description" content="Your trusted pharmaceutical distributor in Rajasthan. We market a focused portfolio of quality formulations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.xeniumbiocorp.com/" />
   <meta property="og:image" content="https://www.xeniumbiocorp.com/images/og-image.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Xenium Biocorp — Committed to Health in India" />
-  <meta name="twitter:description" content="Trusted manufacturer & distributor of high-quality, affordable pharmaceutical products across Rajasthan and India." />
-  <meta name="twitter:image" content="https://www.xeniumbiocorp.com/images/og-image.jpg" />
-
-  <!-- Preconnect fonts for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- NOTE: For quick copy/paste this uses CDN Tailwind. For production, build a purged Tailwind CSS file and swap this out. -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Favicons (replace with your real files) -->
-  <link rel="icon" href="/images/favicon.ico" />
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
-
-  <!-- JSON-LD Organization -->
-  <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Xenium Biocorp",
-      "url":"https://www.xeniumbiocorp.com",
-      "logo":"https://www.xeniumbiocorp.com/images/logo.png",
-      "contactPoint":[{"@type":"ContactPoint","telephone":"+919414084999","contactType":"customer service","areaServed":"IN"}],
-      "address":{"@type":"PostalAddress","streetAddress":"C 182, D, 1, Rd Number 9F, Vishwakarma Industrial Area","addressLocality":"Jaipur","addressRegion":"Rajasthan","postalCode":"","addressCountry":"IN"}
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#003366', light: '#4A90E2', accent: '#F5A623', gray: '#F0F4F8', text: '#333333'
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
     }
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .bg-brand-dark-blue { background-color: #003366; }
-    .text-brand-dark-blue { color: #003366; }
-    .border-brand-dark-blue { border-color: #003366; }
-    .bg-brand-light-blue { background-color: #4A90E2; }
-    .text-brand-light-blue { color: #4A90E2; }
-    .bg-brand-yellow { background-color: #F5A623; }
-    .text-brand-yellow { color: #F5A623; }
-    .bg-brand-gray { background-color: #F0F4F8; }
-    .text-brand-gray { color: #333333; }
-
+    html { scroll-padding-top: 100px; }
     .hero-section {
-      background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/background.jpg');
+      background: linear-gradient(rgba(0, 51, 102, 0.92), rgba(0, 51, 102, 0.85)), url('https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/background.jpg');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
     }
-
-    nav a:hover { color: #F5A623; }
-    .smooth-scroll { scroll-behavior: smooth; }
-
-    /* Mobile menu toggle */
     #mobile-menu { transition: transform 0.3s ease-in-out; }
     .menu-open { transform: translateX(0%); }
-    .menu-closed { transform: translateX(-100%); }
-
-    /* Product & Gallery Pagination */
-    .product-dot, .gallery-dot {
-      width: 12px; height: 12px; border-radius: 50%; background-color: #CBD5E0; border: none; cursor: pointer; transition: background-color 0.3s ease;
+    .menu-closed { transform: translateX(100%); }
+    .product-image { object-fit: contain; mix-blend-mode: multiply; }
+    
+    /* Hide scrollbar for gallery but allow functionality */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
     }
-    .product-dot.active-dot, .gallery-dot.active-dot { background-color: #F5A623; }
-    .product-page.active-page, .gallery-page.active-page { display: grid; }
-    .about-image { max-height: 350px; object-fit: cover; width: 100%; }
-    .product-image { width: 100%; height: 150px; object-fit: contain; margin-left: auto; margin-right: auto; }
-
-    /* Gallery */
-    .gallery-item img { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
-    .gallery-item img:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-
-    /* Gallery modal */
-    .gallery-modal { position: fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.85); display:flex; justify-content:center; align-items:center; z-index:1000; opacity:0; visibility:hidden; transition:opacity 0.3s ease, visibility 0.3s ease; }
-    .gallery-modal.active { opacity:1; visibility:visible; }
-    .gallery-modal-content { max-width:90vw; max-height:90vh; position:relative; }
-    .gallery-modal-content img { width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; border-radius:8px; }
-    .gallery-modal-close { position:absolute; top:-40px; right:0; color:white; font-size:30px; font-weight:bold; cursor:pointer; padding:5px 10px; background-color:rgba(0,0,0,0.5); border-radius:50%; line-height:1; }
-
-    /* small responsive tweaks */
-    @media (min-width:768px) {
-      .product-page, .gallery-page { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
   </style>
 </head>
 
-<body class="text-brand-gray antialiased smooth-scroll">
+<body class="text-brand-text antialiased bg-gray-50 flex flex-col min-h-screen">
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#home" class="text-2xl font-bold text-brand-dark-blue">
-        <span class="text-brand-light-blue">X</span>ENIUM BIOCORP
+      <a href="#home" class="text-2xl font-bold text-brand-dark flex items-center gap-2" aria-label="Xenium Biocorp Home">
+        <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
       </a>
 
-      <nav class="hidden md:flex space-x-6" aria-label="Main navigation">
-        <a href="#home" class="text-gray-700 hover:text-brand-yellow transition duration-300">Home</a>
-        <a href="#about" class="text-gray-700 hover:text-brand-yellow transition duration-300">About Us</a>
-        <a href="#products" class="text-gray-700 hover:text-brand-yellow transition duration-300">Products</a>
-        <a href="#gallery" class="text-gray-700 hover:text-brand-yellow transition duration-300">Gallery</a>
-        <a href="blog.html" class="text-gray-700 hover:text-brand-yellow transition duration-300">Blog</a>
-        <a href="#distribution" class="text-gray-700 hover:text-brand-yellow transition duration-300">Distribution</a>
-        <a href="#contact" class="text-gray-700 hover:text-brand-yellow transition duration-300">Contact Us</a>
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wide">
+        <a href="#home" class="text-gray-600 hover:text-brand-accent transition">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-brand-accent transition">About</a>
+        <a href="products.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
+        <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
+        <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
+        <a href="#gallery" class="text-gray-600 hover:text-brand-accent transition">Gallery</a>
+        <a href="pharmacovigilance.html" class="text-gray-600 hover:text-brand-accent transition">Safety</a>
+        <a href="#contact" class="px-4 py-2 bg-brand-dark text-white rounded hover:bg-brand-light transition">Contact</a>
       </nav>
 
-      <div class="md:hidden">
-        <button id="mobile-menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu" class="text-gray-700 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
+      <!-- Mobile Button -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-button" aria-label="Open navigation" class="text-brand-dark focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
         </button>
       </div>
     </div>
 
-    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-brand-dark-blue bg-opacity-95 p-6 space-y-6 menu-closed" role="dialog" aria-modal="true" aria-hidden="true">
-      <div class="flex justify-between items-center mb-8">
-        <a href="#home" class="text-2xl font-bold text-white"><span class="text-brand-light-blue">X</span>ENIUM BIOCORP</a>
-        <button id="close-mobile-menu-button" class="text-white focus:outline-none" aria-label="Close navigation">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <a href="#home" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Home</a>
-      <a href="#about" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">About Us</a>
-      <a href="#products" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Products</a>
-      <a href="#gallery" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Gallery</a>
-      <a href="blog.html" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Blog</a>
-      <a href="#distribution" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Distribution</a>
-      <a href="#contact" class="block text-white hover:text-brand-yellow text-lg py-2 mobile-menu-link">Contact Us</a>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-brand-dark/95 backdrop-blur-sm z-[60] p-8 flex flex-col justify-center space-y-8 menu-closed text-center">
+      <button id="close-mobile-menu-button" class="absolute top-6 right-6 text-white" aria-label="Close navigation">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <a href="#home" class="text-2xl text-white hover:text-brand-accent mobile-link">Home</a>
+      <a href="about.html" class="text-2xl text-white hover:text-brand-accent mobile-link">About Us</a>
+      <a href="products.html" class="text-2xl text-white hover:text-brand-accent mobile-link">Products</a>
+      <a href="quality.html" class="text-2xl text-white hover:text-brand-accent mobile-link">Quality</a>
+      <a href="distribution.html" class="text-2xl text-white hover:text-brand-accent mobile-link">Distribution</a>
+      <a href="#gallery" class="text-2xl text-white hover:text-brand-accent mobile-link">Gallery</a>
+      <a href="pharmacovigilance.html" class="text-2xl text-white hover:text-brand-accent mobile-link">Safety</a>
+      <a href="#contact" class="text-2xl text-brand-accent font-bold mobile-link">Contact Us</a>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero-section text-white py-20 md:py-32">
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-2 text-brand-yellow">Xenium Biocorp</h1>
-        <h2 class="text-xl md:text-2xl font-medium italic text-brand-light-blue mb-6">Committed to Health, Dedicated to India</h2>
-        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          Xenium Biocorp is a trusted name in pharmaceuticals, bringing quality and affordable medicines to the people of India. With a rich heritage and a new vision for growth, we are expanding our reach and impact.
+  <main class="flex-grow">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section text-white py-24 md:py-32 flex items-center relative">
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+          Quality Medicines, Built on <br/><span class="text-brand-accent">Trusted Partnerships</span>
+        </h1>
+        <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-200">
+          As a premier <strong>pharmaceutical distributor in Rajasthan</strong> and marketing company, Xenium Biocorp ensures consistent supply and ethical promotion of high-quality formulations across India.
         </p>
-        <a href="#products" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">Explore Our Products</a>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="products.html" class="bg-brand-accent text-brand-dark font-bold py-3 px-8 rounded-lg hover:bg-white transition duration-300 transform hover:scale-105 shadow-lg">View Products</a>
+          <a href="distribution.html" class="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-brand-dark transition duration-300 shadow-lg">Partner With Us</a>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="py-16 md:py-24 bg-white">
+    <!-- WHAT WE DO -->
+    <section class="py-16 bg-white -mt-10 relative z-20">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-16">About Xenium Biocorp</h2>
-
-        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
-          <div class="order-1">
-            <!-- Example: add width/height to reduce CLS; these dimensions are approximate; adjust to fit your actual asset ratios -->
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif" alt="Xenium Biocorp Heritage" class="rounded-lg shadow-xl w-full about-image" loading="lazy" decoding="async" width="900" height="600" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+        <h2 class="sr-only">Our Services - Pharma Marketing and Distribution</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-light hover:-translate-y-1 transition duration-300">
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Branded Formulations</h3>
+            <p class="text-gray-600">We market a selective range of <strong>third-party manufactured pharma products</strong>, built for everyday clinical needs.</p>
           </div>
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-accent hover:-translate-y-1 transition duration-300">
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Regional Strength</h3>
+            <p class="text-gray-600">Our distributor and stockist network enables predictable availability across key districts, solidifying our role as a top <strong>pharma company in Jaipur</strong>.</p>
+          </div>
+          <div class="bg-brand-gray p-8 rounded-xl shadow-lg border-t-4 border-brand-dark hover:-translate-y-1 transition duration-300">
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Quality Oversight</h3>
+            <p class="text-gray-600">We retain full responsibility for partner selection, batch documentation review, and post-market feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="space-y-4 order-2">
-            <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Our Story</h3>
-            <p class="text-lg leading-relaxed">
-              Founded 2 decades ago by Birbal Gupta and Kuldeep Singh, Xenium Biocorp has a long-standing tradition of serving communities across Rajasthan. We operate on a lean model, partnering with certified contract manufacturers to ensure high-quality production while focusing on effective marketing and distribution. Founder, Birbal Gupta has been a pioneer in the pharmaceutical industry for more than 40 years.
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">About Xenium Biocorp</h2>
+          <div class="w-20 h-1 bg-brand-accent mx-auto mt-4"></div>
+          <p class="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
+            Established over two decades ago, Xenium Biocorp has grown into a trusted <strong>pharma marketing company in India</strong>. Based in Jaipur, we bridge the gap between quality manufacturing and reliable distribution.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+          <div>
+             <img src="images/story.webp" alt="Story" class="rounded-lg shadow-xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://placehold.co/600x600/E0E0E0/333333?text=Xenium+Office+Jaipur'">
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-brand-dark">Our Story</h3>
+            <p class="text-gray-700 leading-relaxed text-lg">
+              Xenium Biocorp was founded with the objective of serving regional healthcare markets with reliability. We grew by understanding local distribution realities and the needs of pharmacists across Rajasthan.
             </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mb-12 md:mb-20">
-          <div class="space-y-4 order-2 md:order-1">
-            <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Mission & Vision</h3>
-            <p class="text-lg leading-relaxed"><strong>Mission:</strong> To provide accessible, high-quality pharmaceutical products that improve the health and well-being of individuals and families throughout India.</p>
-            <p class="text-lg leading-relaxed"><strong>Vision:</strong> To be the leading pharmaceutical company in India, recognized for our commitment to quality, innovation, and customer satisfaction.</p>
-          </div>
-
-          <div class="order-1 md:order-2">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/mission.avif" alt="Xenium Biocorp Mission and Vision" class="rounded-lg shadow-xl w-full about-image" loading="lazy" decoding="async" width="900" height="600" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div class="order-1">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/approach.avif" alt="Xenium Biocorp Approach" class="rounded-lg shadow-xl w-full about-image" loading="lazy" decoding="async" width="900" height="600" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
-          </div>
-
-          <div class="space-y-4 order-2">
-            <h3 class="text-2xl md:text-3xl font-semibold text-brand-dark-blue">Our Approach</h3>
-            <p class="text-lg leading-relaxed">We believe in ethical practices, strong partnerships, and a deep understanding of the needs of our customers and healthcare professionals. Our focus is on quality assurance from manufacturing to delivery, ensuring that every product meets the highest standards of safety and efficacy.</p>
+            <p class="text-gray-700 leading-relaxed text-lg">
+              By focusing on a lean model, we collaborate with certified partners for <strong>third-party manufactured pharma products</strong> while maintaining strict internal quality control.
+            </p>
+            <div class="mt-4">
+               <a href="about.html" class="inline-block bg-white text-brand-light font-bold border-2 border-brand-light py-2 px-6 rounded-lg hover:bg-brand-light hover:text-white transition duration-300">Read Our Story &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-   <section id="products" class="py-16 md:py-24 bg-brand-gray">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-6">Our Products</h2>
-    <p class="text-lg text-center max-w-2xl mx-auto mb-12">
-      Discover our range of top-selling pharmaceutical products, trusted by healthcare professionals and patients across India for their quality and efficacy.
-    </p>
-
-    <!-- Product page 1 -->
-    <div id="product-page-1" class="product-page active-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg" 
-             alt="Aceclozen P" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen P</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenSP.jpg" 
-             alt="Aceclozen SP" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Aceclozen SP</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg" 
-             alt="Calcizen" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/CalcizenK2.jpg" 
-             alt="Calcizen-K2" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Calcizen-K2</h4>
-      </div>
-    </div>
-
-    <!-- Product page 2 -->
-    <div id="product-page-2" class="product-page hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg" 
-             alt="Combid" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Combid</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg" 
-             alt="Doxizen" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Doxizen</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/GastridomLSR.jpg" 
-             alt="Gastridom-LSR" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Gastridom-LSR</h4>
-      </div>
-
-      <div class="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
-        <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/LycomaxForte.jpg" 
-             alt="Lycomax Forte" 
-             class="rounded-md mb-3 product-image" 
-             loading="lazy" decoding="async" width="400" height="300"
-             onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=Image+Not+Found';">
-        <h4 class="text-md font-semibold text-brand-dark-blue mt-auto">Lycomax Forte</h4>
-      </div>
-    </div>
-
-    <!-- Pagination dots -->
-    <div id="product-dots-container" class="flex justify-center space-x-3 mt-8" role="tablist" aria-label="Product pages">
-      <button class="product-dot active-dot" data-page="1" aria-label="Go to product page 1"></button>
-      <button class="product-dot" data-page="2" aria-label="Go to product page 2"></button>
-    </div>
-  </div>
-</section>
-
-    <section id="gallery" class="py-16 md:py-24 bg-white">
+    <!-- OUR APPROACH -->
+    <section class="py-20 bg-brand-gray">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Our corporate office & hub</h2>
-        <p class="text-lg text-center max-w-2xl mx-auto mb-12">A glimpse into our state-of-the-art corporate office and operational facilities, ensuring quality and efficiency.</p>
-
-        <div id="gallery-page-1" class="gallery-page active-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/office1.jpg" alt="Office Image 1" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
-          </div>
-
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/outside1.jpg" alt="Office Image 2" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
-          </div>
-
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/office2.jpg" alt="Office Image 3" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
-          </div>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-brand-dark">Our Approach</h2>
+          <p class="text-gray-600 mt-4 text-lg">Guided by reliability, safety, and ethical distribution practices.</p>
         </div>
 
-        <div id="gallery-page-2" class="gallery-page hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/office5.jpg" alt="Office Image 5" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
+               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Focused Portfolio</h3>
+            <p class="text-gray-600">Addressing everyday clinical needs with consistent supply chains across Rajasthan.</p>
           </div>
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/office4.jpg" alt="Office Image 6" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
+          <!-- Card 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Quality Oversight</h3>
+            <p class="text-gray-600">Rigorous checks on documentation and packaging before any product enters our distribution network.</p>
           </div>
-          <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/office3.jpg" alt="Office Image 7" class="w-full h-72 object-cover gallery-image" loading="lazy" decoding="async" width="900" height="600">
+          <!-- Card 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-blue-50 text-brand-light rounded-full flex items-center justify-center mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">Ethical Marketing</h3>
+            <p class="text-gray-600">Sustainable growth through ethical promotion and long-term <strong>pharma distribution partnerships</strong>.</p>
           </div>
-        </div>
-
-        <div id="gallery-dots-container" class="flex justify-center space-x-3 mt-8" role="tablist" aria-label="Gallery pages">
-          <button class="gallery-dot active-dot" data-page="1" aria-label="Go to gallery page 1"></button>
-          <button class="gallery-dot" data-page="2" aria-label="Go to gallery page 2"></button>
         </div>
       </div>
     </section>
 
-    <section id="distribution" class="py-16 md:py-24 bg-white">
+    <!-- LEADERSHIP SECTION -->
+    <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Distribution Network & Partnerships</h2>
+        <div class="bg-brand-dark text-white rounded-2xl p-10 md:p-16">
+          <h3 class="text-3xl font-bold mb-10 text-center text-brand-accent">Our Leadership</h3>
+          <p class="text-center text-gray-300 max-w-2xl mx-auto mb-16 text-lg">Driven by decades of experience in the Indian pharmaceutical trade.</p>
+          
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Leader 1 -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+              <h4 class="text-2xl font-bold text-white mb-2">Birbal Gupta</h4>
+              <p class="text-brand-light text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder</p>
+              <p class="text-gray-300 text-lg leading-relaxed">With over 40 years of experience, Birbal Gupta has been instrumental in establishing Xenium as a key <strong>pharma company in Jaipur</strong>.</p>
+            </div>
+            <!-- Leader 2 -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-600 pt-10 md:pt-0 md:pl-12">
+              <h4 class="text-2xl font-bold text-white mb-2">Kuldeep Singh</h4>
+              <p class="text-brand-light text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder</p>
+              <p class="text-gray-300 text-lg leading-relaxed">Focusing on market expansion and partner coordination, Kuldeep Singh leads our growth in the regional pharma sector.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS PREVIEW -->
+    <section id="products" class="py-20 bg-brand-gray">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Our Product Portfolio</h2>
+          <p class="text-gray-600 mt-4 max-w-3xl mx-auto text-lg">
+            A selective range of high-quality formulations for Pain Management, Gastro, and Nutrition.
+          </p>
+        </div>
+
+        <!-- Sample Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <!-- Product 1 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/AceclozenP.webp" alt="Aceclozen P - Pain Relief Medicine" class="h-full w-auto product-image" loading="lazy">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Aceclozen P</h4>
+              <p class="text-sm text-gray-700 font-medium">Aceclofenac + Paracetamol</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded font-semibold">Pain Mgmt</span>
+            </div>
+          </div>
+           <!-- Product 2 -->
+           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Calcizen.webp" alt="Calcizen - Calcium Supplement" class="h-full w-auto product-image" loading="lazy">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Calcizen</h4>
+              <p class="text-sm text-gray-700 font-medium">Calcium + Vitamin D3</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-green-100 text-green-700 text-xs rounded font-semibold">Nutrition</span>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Combid.webp" alt="Combid - Gastro Medicine" class="h-full w-auto product-image" loading="lazy">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Combid</h4>
+              <p class="text-sm text-gray-700 font-medium">Pharmaceutical Formulation</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded font-semibold">Gastro</span>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col">
+            <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
+              <img src="products/Doxizen.webp" alt="Doxizen - Antibiotic" class="h-full w-auto product-image" loading="lazy">
+            </div>
+            <div class="mt-auto">
+              <h4 class="text-lg font-bold text-brand-dark">Doxizen</h4>
+              <p class="text-sm text-gray-700 font-medium">Doxycycline Capsule</p>
+              <span class="inline-block mt-3 px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded font-semibold">Antibiotic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+            <a href="products.html" class="inline-block bg-brand-accent text-brand-dark font-bold py-3 px-10 rounded-lg hover:bg-white hover:shadow-lg transition duration-300 text-lg border-2 border-brand-accent">View Full Product Catalog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY PREVIEW -->
+    <section id="quality" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-brand-dark mb-6">Quality & Compliance</h2>
+            <p class="text-lg text-gray-700 mb-6">
+              Our reputation as a reliable <strong>pharma marketing company</strong> relies on quality. We strictly oversee partner qualification and batch documentation.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-brand-light mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="text-gray-700"><strong>Partner Qualification:</strong> Only licensed, GMP-compliant manufacturers.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-brand-light mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="text-gray-700"><strong>Batch Documentation:</strong> Thorough internal review before release.</span>
+              </li>
+            </ul>
+            <div class="mt-8">
+               <a href="quality.html" class="inline-block bg-white text-brand-light font-bold border-2 border-brand-light py-2 px-6 rounded-lg hover:bg-brand-light hover:text-white transition duration-300">View Framework &rarr;</a>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-8 shadow-inner">
+            <h3 class="text-xl font-bold text-brand-dark mb-4">Quality Queries</h3>
+            <p class="mb-6 text-gray-600">Contact us for COAs, batch details, or compliance info.</p>
+            <a href="mailto:xeniumbiocorp@gmail.com" class="text-brand-light font-bold hover:underline text-lg flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              xeniumbiocorp@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISTRIBUTION PREVIEW -->
+    <section id="distribution" class="py-20 bg-brand-gray">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Distribution Network</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+             Looking for a <strong>pharma distribution partnership</strong>? We work with partners who value consistency and transparency.
+          </p>
+        </div>
+        
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="space-y-6">
-            <h3 class="text-2xl font-semibold text-brand-dark-blue">Our Reach in Rajasthan</h3>
-            <p class="text-lg leading-relaxed">We have a growing network of distributors and pharmacies covering major cities and towns in Rajasthan, ensuring our medicines are available where they are needed. Our commitment is to make quality healthcare accessible across the state.</p>
-
-            <h3 class="text-2xl font-semibold text-brand-dark-blue mt-4">Partner with Us</h3>
-            <p class="text-lg leading-relaxed">Xenium Biocorp is actively seeking dynamic and reliable partners to expand its distribution network. If you are a distributor, stockist, or pharmacy looking for a growth-oriented pharmaceutical company to collaborate with, we would love to hear from you.</p>
-
-            <a href="mailto:partnerships@xeniumbiocorp.com?subject=Partnership Inquiry for Xenium Biocorp" rel="noopener noreferrer" class="inline-block bg-brand-light-blue text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-dark-blue transition duration-300">Become a Partner</a>
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-brand-accent">
+              <h3 class="text-xl font-bold text-brand-dark mb-4">Partner Benefits</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Access to high-demand products</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Clear rate cards & documentation</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-3"></span>Support for territory expansion</li>
+              </ul>
+            </div>
+            
+            <div class="text-center md:text-left pt-4">
+               <a href="distribution.html" class="inline-block bg-brand-dark text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-light transition duration-300">Partner Details &rarr;</a>
+            </div>
           </div>
 
-          <div>
-            <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/map.avif" alt="Distribution Network in Rajasthan" class="rounded-lg shadow-xl w-full h-auto" loading="lazy" decoding="async" width="900" height="600" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E0E0/333333?text=Image+Not+Found';">
+          <div class="relative">
+             <div class="absolute -inset-2 bg-brand-light/20 rounded-xl transform rotate-2"></div>
+             <img src="images/map.webp" alt="Pharmaceutical Distribution Network in Rajasthan" class="relative rounded-lg shadow-xl w-full h-auto" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-24 bg-brand-gray">
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-10">Our Corporate Office</h2>
+        
+        <div class="relative max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl group">
+           <!-- Slides Container -->
+           <div id="slider-track" class="flex transition-transform duration-500 ease-out">
+              <!-- Slide 1 -->
+              <div class="min-w-full">
+                 <img src="images/office1.webp" alt="Xenium Corporate Office" class="w-full h-64 md:h-96 object-cover">
+              </div>
+              <!-- Slide 2 -->
+              <div class="min-w-full">
+                 <img src="images/office_sh1.webp" alt="Office Reception Area" class="w-full h-64 md:h-96 object-cover">
+              </div>
+               <!-- Slide 3 -->
+              <div class="min-w-full">
+                 <img src="images/office5.webp" alt="Conference Room" class="w-full h-64 md:h-96 object-cover">
+              </div>
+               <!-- Slide 4 -->
+              <div class="min-w-full">
+                 <img src="images/outside1.webp" alt="Operations Team" class="w-full h-64 md:h-96 object-cover">
+              </div>
+               <!-- Slide 5 -->
+              <div class="min-w-full">
+                 <img src="images/warehouse.webp" alt="Distribution Warehouse" class="w-full h-64 md:h-96 object-cover">
+              </div>
+           </div>
+
+           <!-- Controls -->
+           <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-dark p-3 rounded-full shadow-lg transition opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none" aria-label="Previous Slide">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+           </button>
+           <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-brand-dark p-3 rounded-full shadow-lg transition opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none" aria-label="Next Slide">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-brand-gray">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-dark-blue mb-12">Get In Touch</h2>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Get In Touch</h2>
+            <p class="text-gray-600 mt-4 text-lg">Contact the leading <strong>pharma company in Jaipur</strong> for inquiries and partnerships.</p>
+        </div>
 
-        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-2xl">
-          <p class="text-lg text-center mb-8">We welcome your inquiries. Whether you are a healthcare professional, a potential partner, or a customer, feel free to reach out to us.</p>
-
-          <div class="space-y-6">
-            <div>
-              <h3 class="text-xl font-semibold text-brand-dark-blue">Corporate Office</h3>
-              <p class="text-gray-700">
-                Xenium Biocorp<br>
-                C 182, D, 1, Rd Number 9F, Vishwakarma Industrial Area<br>
-                Jaipur, Rajasthan, India
-              </p>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold text-brand-dark-blue">Email Us</h3>
-              <p class="text-gray-700">For General Inquiries and Partnerships: <a href="mailto:xeniumbiocorp@gmail.com" rel="noopener noreferrer" class="text-brand-light-blue hover:underline">xeniumbiocorp@gmail.com</a></p>
-            </div>
-
-            <div>
-              <h3 class="text-xl font-semibold text-brand-dark-blue">Call Us</h3>
-              <p class="text-gray-700">+91-94140-84999</p>
-            </div>
-
-            <!-- Lead capture form: functional fallback via mailto. Replace with Formspree/Netlify/your backend for server collection. -->
-            <div>
-              <h3 class="text-xl font-semibold text-brand-dark-blue">Quick Inquiry</h3>
-              <form id="contactForm" class="space-y-4">
-                <div>
-                  <label class="block text-sm">Name <span class="text-red-500">*</span></label>
-                  <input id="cf-name" name="name" required class="w-full rounded border px-3 py-2" />
-                </div>
-
-                <div>
-                  <label class="block text-sm">Email <span class="text-red-500">*</span></label>
-                  <input id="cf-email" name="email" type="email" required class="w-full rounded border px-3 py-2" />
-                </div>
-
-                <div>
-                  <label class="block text-sm">Message <span class="text-red-500">*</span></label>
-                  <textarea id="cf-message" name="message" required class="w-full rounded border px-3 py-2"></textarea>
-                </div>
-
-                <div class="text-center pt-6">
-                  <button type="submit" class="bg-brand-yellow text-brand-dark-blue font-semibold py-3 px-8 rounded-lg hover:bg-opacity-90 transition duration-300 text-lg">Send Us an Email</button>
-                </div>
-
-              </form>
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
+          
+          <div class="bg-brand-dark text-white p-10 md:w-2/5 flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-light opacity-20 rounded-full"></div>
+            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-accent opacity-20 rounded-full"></div>
+            
+            <div class="relative z-10 space-y-8">
+               <div>
+                  <h3 class="text-xl font-bold mb-2">Xenium Biocorp</h3>
+                  <p class="text-blue-200">Corporate Office</p>
+                  <p class="font-medium mt-2">C 182, D, 1, Rd Number 9F<br>Vishwakarma Industrial Area<br>Jaipur, Rajasthan</p>
+               </div>
+               <div>
+                  <p class="text-blue-200">Phone</p>
+                  <p class="font-medium mt-1">+91-94140-84999</p>
+               </div>
+               <div>
+                  <p class="text-blue-200">Email</p>
+                  <p class="font-medium mt-1">xeniumbiocorp@gmail.com</p>
+               </div>
             </div>
           </div>
+
+          <div class="p-10 md:w-3/5 bg-gray-50">
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" name="name" placeholder="Name *" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-light outline-none bg-white">
+                <input type="email" name="email" placeholder="Email *" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-light outline-none bg-white">
+              </div>
+              <select name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-light outline-none bg-white">
+                <option>General Inquiry</option>
+                <option>Distribution Partnership</option>
+                <option>Product Information</option>
+                <option>Quality/Complaint</option>
+              </select>
+              <textarea name="message" rows="4" placeholder="Message *" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-light outline-none bg-white"></textarea>
+              <button type="submit" class="w-full bg-brand-accent text-brand-dark font-bold py-4 rounded-lg hover:shadow-lg transition duration-300">Send Message</button>
+            </form>
+          </div>
+
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-brand-dark-blue text-white py-12">
+  <footer class="bg-brand-dark text-white py-12 border-t border-gray-800">
     <div class="container mx-auto px-6 text-center">
-      <a href="#home" class="text-2xl font-bold"><span class="text-brand-light-blue">X</span>ENIUM BIOCORP</a>
-      <p class="my-4 text-gray-300">Innovating for a healthier India</p>
-
-      <p class="text-sm text-gray-400">&copy; <span id="currentYear"></span> Xenium Biocorp. All Rights Reserved.</p>
-      <p class="text-xs text-gray-500 mt-1">Website designed to be simple and informative.</p>
+      <a href="#home" class="text-2xl font-bold tracking-tight inline-flex items-center gap-2">
+        <span class="text-brand-light">X</span>ENIUM BIOCORP
+      </a>
+      <p class="my-4 text-gray-400">Innovating for a healthier India from Jaipur, Rajasthan.</p>
+      
+      <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mb-8 text-sm text-gray-400">
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="products.html" class="hover:text-white transition">Products</a>
+        <a href="quality.html" class="hover:text-white transition">Quality</a>
+        <a href="distribution.html" class="hover:text-white transition">Partnerships</a>
+        <a href="pharmacovigilance.html" class="hover:text-white transition">Safety</a>
+      </div>
+      <p class="text-xs text-gray-600">&copy; <span id="currentYear"></span> Xenium Biocorp. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Gallery Modal -->
-  <div id="galleryModal" class="gallery-modal" aria-hidden="true">
-    <span class="gallery-modal-close" id="galleryModalClose" role="button" aria-label="Close gallery modal">&times;</span>
-    <div class="gallery-modal-content">
-      <img src="" alt="Enlarged Gallery Image" id="modalImage">
-    </div>
-  </div>
-
-  <!-- Scripts: DOMContentLoaded wrapper for safe execution -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Set current year in footer
-      const yearEl = document.getElementById('currentYear');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
+      // Year Logic
+      const yearSpan = document.getElementById('currentYear');
+      if(yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-      // Mobile menu
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const closeMobileMenuButton = document.getElementById('close-mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+      // Mobile Menu Logic
+      const btn = document.getElementById('mobile-menu-button');
+      const closeBtn = document.getElementById('close-mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      const links = document.querySelectorAll('.mobile-link');
 
-      // Focusable first element in mobile menu for simple focus trap
-      const firstFocusableInMobileMenu = mobileMenu ? mobileMenu.querySelector('a, button, input, [tabindex="0"]') : null;
-
-      function openMobileMenu() {
-        if (!mobileMenu || !mobileMenuButton) return;
-        mobileMenu.classList.remove('menu-closed');
-        mobileMenu.classList.add('menu-open');
-        mobileMenu.setAttribute('aria-hidden', 'false');
-        mobileMenuButton.setAttribute('aria-expanded', 'true');
-        // move focus to first item
-        if (firstFocusableInMobileMenu) firstFocusableInMobileMenu.focus();
-        // prevent background scroll
-        document.body.style.overflow = 'hidden';
+      function toggleMenu() {
+        if (!menu) return;
+        const isClosed = menu.classList.contains('menu-closed');
+        if (isClosed) {
+          menu.classList.remove('menu-closed');
+          menu.classList.add('menu-open');
+          document.body.style.overflow = 'hidden'; 
+        } else {
+          menu.classList.add('menu-closed');
+          menu.classList.remove('menu-open');
+          document.body.style.overflow = ''; 
+        }
       }
 
-      function closeMobileMenu() {
-        if (!mobileMenu || !mobileMenuButton) return;
-        mobileMenu.classList.remove('menu-open');
-        mobileMenu.classList.add('menu-closed');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        mobileMenuButton.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-        mobileMenuButton.focus();
-      }
+      if(btn) btn.addEventListener('click', toggleMenu);
+      if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+      links.forEach(link => { link.addEventListener('click', toggleMenu); });
 
-      if (mobileMenuButton && mobileMenu && closeMobileMenuButton) {
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-        closeMobileMenuButton.addEventListener('click', closeMobileMenu);
+      // SLIDER LOGIC
+      const track = document.getElementById('slider-track');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      
+      if(track && prevBtn && nextBtn) {
+        let currentIndex = 0;
+        const slides = track.children;
+        const totalSlides = slides.length;
 
-        // Close menu on Escape
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && mobileMenu.classList.contains('menu-open')) {
-            closeMobileMenu();
-          }
-        });
-      }
-
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          if (mobileMenu && mobileMenu.classList.contains('menu-open')) {
-            closeMobileMenu();
-          }
-        });
-      });
-
-      // Smooth scroll for same-page anchors (with offset for sticky header)
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const href = this.getAttribute('href');
-          if (!href || href === '#' ) return;
-          const targetElement = document.querySelector(href);
-          if (!targetElement) return;
-          // ensure same page
-          if (this.hostname !== window.location.hostname || this.pathname !== window.location.pathname) return;
-
-          e.preventDefault();
-          const header = document.querySelector('header');
-          const headerOffset = header ? header.offsetHeight : 0;
-          const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-          const offsetPosition = elementPosition - headerOffset;
-          window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-        });
-      });
-
-      // Product Pagination
-      const productDotsContainer = document.getElementById('product-dots-container');
-      if (productDotsContainer) {
-        const productDots = productDotsContainer.querySelectorAll('.product-dot');
-        const productPages = [
-          document.getElementById('product-page-1'),
-          document.getElementById('product-page-2')
-        ].filter(Boolean);
-
-        productDots.forEach(dot => {
-          dot.addEventListener('click', () => {
-            const pageNumber = dot.dataset.page;
-            productDots.forEach(d => d.classList.remove('active-dot'));
-            productPages.forEach(p => {
-              if (p) { p.classList.add('hidden'); p.classList.remove('active-page', 'grid'); }
-            });
-            dot.classList.add('active-dot');
-            const targetPage = document.getElementById(`product-page-${pageNumber}`);
-            if (targetPage) { targetPage.classList.remove('hidden'); targetPage.classList.add('active-page', 'grid'); }
-          });
-        });
-      }
-
-      // Gallery Pagination
-      const galleryDotsContainer = document.getElementById('gallery-dots-container');
-      if (galleryDotsContainer) {
-        const galleryDots = galleryDotsContainer.querySelectorAll('.gallery-dot');
-        const galleryPages = [
-          document.getElementById('gallery-page-1'),
-          document.getElementById('gallery-page-2')
-        ].filter(Boolean);
-
-        galleryDots.forEach(dot => {
-          dot.addEventListener('click', () => {
-            const pageNumber = dot.dataset.page;
-            galleryDots.forEach(d => d.classList.remove('active-dot'));
-            galleryPages.forEach(p => { if (p) { p.classList.add('hidden'); p.classList.remove('active-page', 'grid'); }});
-            dot.classList.add('active-dot');
-            const targetPage = document.getElementById(`gallery-page-${pageNumber}`);
-            if (targetPage) { targetPage.classList.remove('hidden'); targetPage.classList.add('active-page', 'grid'); }
-          });
-        });
-      }
-
-      // Gallery Modal
-      const galleryImages = document.querySelectorAll('.gallery-image');
-      const modal = document.getElementById('galleryModal');
-      const modalImage = document.getElementById('modalImage');
-      const closeModalButton = document.getElementById('galleryModalClose');
-
-      if (modal && modalImage && closeModalButton) {
-        galleryImages.forEach(image => {
-          image.addEventListener('click', () => {
-            modalImage.src = image.src;
-            modalImage.alt = image.alt || 'Gallery image';
-            modal.classList.add('active');
-            modal.setAttribute('aria-hidden', 'false');
-            closeModalButton.focus();
-            document.body.style.overflow = 'hidden';
-          });
-        });
-
-        function closeModal() {
-          modal.classList.remove('active');
-          modal.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
+        function updateSlider() {
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
-        closeModalButton.addEventListener('click', closeModal);
-        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
-      }
-
-      // Contact Form: simple fallback that opens user's mail client with populated body (functional w/o backend).
-      // Replace this handler with a Formspree/Netlify endpoint for server-side capture.
-      const contactForm = document.getElementById('contactForm');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-          e.preventDefault();
-          const name = document.getElementById('cf-name').value.trim();
-          const email = document.getElementById('cf-email').value.trim();
-          const message = document.getElementById('cf-message').value.trim();
-
-          // Build mailto link
-          const subject = encodeURIComponent('Website Inquiry - ' + (name || 'New Lead'));
-          const bodyLines = [
-            'Name: ' + name,
-            'Email: ' + email,
-            'Message:',
-            message
-          ];
-          const body = encodeURIComponent(bodyLines.join('\n\n'));
-          const mailto = `mailto:xeniumbiocorp@gmail.com?subject=${subject}&body=${body}`;
-
-          // Open mail client
-          window.location.href = mailto;
-
-          // Optionally, you can show a small confirmation UI here.
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlider();
         });
-      }
 
-      // Accessibility: ensure focusable elements inside mobile menu are keyboard reachable
-      // (A more advanced trap could be added with a small library if needed.)
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateSlider();
+        });
+
+        // Auto-play (optional, remove if not desired)
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlider();
+        }, 5000); // Slides every 5 seconds
+      }
     });
   </script>
 </body>
