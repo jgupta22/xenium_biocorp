@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xenium Biocorp | Pharma Marketing Company in India & Distributor in Rajasthan</title>
 
+  <!-- Performance: Preconnect to Font domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Performance: Preload Critical Hero Image -->
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/background.jpg">
+
   <!-- Favicon / Logo -->
-  <!-- Upload 'favicon.png' to your images folder on GitHub -->
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
 
@@ -85,8 +91,6 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#home" class="text-2xl font-bold text-brand-dark flex items-center gap-2" aria-label="Xenium Biocorp Home">
-        <!-- Logo Image Placeholder (Optional - if you want logo in header too) -->
-        <!-- <img src="images/favicon.png" alt="Logo" class="h-8 w-8"> -->
         <span><span class="text-brand-light">X</span>ENIUM BIOCORP</span>
       </a>
 
@@ -94,7 +98,7 @@
       <nav class="hidden lg:flex space-x-6 text-sm font-medium uppercase tracking-wide">
         <a href="#home" class="text-gray-600 hover:text-brand-accent transition">Home</a>
         <a href="about.html" class="text-gray-600 hover:text-brand-accent transition">About</a>
-        <a href="productspage.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
+        <a href="products.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
         <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
         <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
         <a href="#gallery" class="text-gray-600 hover:text-brand-accent transition">Gallery</a>
@@ -170,7 +174,7 @@
       </div>
     </section>
 
-    <!-- CORE COMPETENCIES (Redesigned "What We Do") -->
+    <!-- CORE COMPETENCIES -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
@@ -203,11 +207,10 @@
       </div>
     </section>
 
-    <!-- COMPLIANCE BAR (New Trust Signal) -->
+    <!-- COMPLIANCE BAR -->
     <section class="bg-white border-y border-gray-100 py-10">
         <div class="container mx-auto px-6">
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                <!-- Visual placeholders for standards - using text/icon combo for flexibility -->
                 <div class="flex items-center space-x-2">
                     <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     <span class="font-bold text-brand-dark text-lg">GMP Certified Partners</span>
@@ -229,7 +232,8 @@
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="order-2 md:order-1">
-             <img src="images/story.webp" alt="Xenium Biocorp Office Jaipur" class="rounded-lg shadow-2xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif'; this.onerror=null;">
+             <!-- Performance: Added explicit width/height and lazy loading -->
+             <img src="images/story.webp" alt="Xenium Biocorp Office Jaipur" width="800" height="600" loading="lazy" class="rounded-lg shadow-2xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif'; this.onerror=null;">
           </div>
           <div class="space-y-6 order-1 md:order-2">
             <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Building Trust Since 2003</h2>
@@ -292,7 +296,7 @@
           <!-- Product 1 -->
           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/AceclozenP.webp" alt="Aceclozen P - Pain Relief Medicine" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg'; this.onerror=null;">
+              <img src="products/AceclozenP.webp" alt="Aceclozen P - Pain Relief Medicine" width="300" height="200" loading="lazy" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/AceclozenP.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Aceclozen P</h4>
@@ -303,7 +307,7 @@
            <!-- Product 2 -->
            <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Calcizen.webp" alt="Calcizen - Calcium Supplement" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg'; this.onerror=null;">
+              <img src="products/Calcizen.webp" alt="Calcizen - Calcium Supplement" width="300" height="200" loading="lazy" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Calcizen.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Calcizen</h4>
@@ -314,7 +318,7 @@
           <!-- Product 3 -->
           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Combid.webp" alt="Combid - Gastro Medicine" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg'; this.onerror=null;">
+              <img src="products/Combid.webp" alt="Combid - Gastro Medicine" width="300" height="200" loading="lazy" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Combid.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Combid</h4>
@@ -325,7 +329,7 @@
           <!-- Product 4 -->
           <div class="bg-white p-5 rounded-lg shadow hover:shadow-xl transition flex flex-col group">
             <div class="h-48 bg-gray-50 rounded mb-4 flex items-center justify-center p-2 overflow-hidden">
-              <img src="products/Doxizen.webp" alt="Doxizen - Antibiotic" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg'; this.onerror=null;">
+              <img src="products/Doxizen.webp" alt="Doxizen - Antibiotic" width="300" height="200" loading="lazy" class="h-full w-auto product-image group-hover:scale-110 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/products/Doxizen.jpg'; this.onerror=null;">
             </div>
             <div class="mt-auto">
               <h4 class="text-lg font-bold text-brand-dark">Doxizen</h4>
@@ -336,7 +340,7 @@
         </div>
 
         <div class="text-center">
-            <a href="productspage.html" class="inline-block bg-brand-accent text-brand-dark font-bold py-3 px-10 rounded-lg hover:bg-white hover:shadow-lg transition duration-300 text-lg border-2 border-brand-accent">View Full Product Catalog</a>
+            <a href="products.html" class="inline-block bg-brand-accent text-brand-dark font-bold py-3 px-10 rounded-lg hover:bg-white hover:shadow-lg transition duration-300 text-lg border-2 border-brand-accent">View Full Product Catalog</a>
         </div>
       </div>
     </section>
@@ -369,7 +373,7 @@
             <p class="mb-6 text-gray-600">Contact us for COAs, batch details, or compliance info.</p>
             <a href="mailto:xeniumbiocorp@gmail.com" class="text-brand-light font-bold hover:underline text-lg flex items-center">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              xeniumbiocorp@gmail.com
+              quality@xeniumbiocorp.com
             </a>
           </div>
         </div>
@@ -404,7 +408,7 @@
 
           <div class="relative">
              <div class="absolute -inset-2 bg-brand-light/20 rounded-xl transform rotate-2"></div>
-             <img src="images/map.webp" alt="Pharmaceutical Distribution Network in Rajasthan" class="relative rounded-lg shadow-xl w-full h-auto" loading="lazy" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/map.avif'; this.onerror=null;">
+             <img src="images/map.webp" alt="Pharmaceutical Distribution Network in Rajasthan" width="600" height="400" loading="lazy" class="relative rounded-lg shadow-xl w-full h-auto" onerror="this.src='https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/map.avif'; this.onerror=null;">
           </div>
         </div>
       </div>
@@ -420,23 +424,23 @@
            <div id="slider-track" class="flex transition-transform duration-500 ease-out">
               <!-- Slide 1 -->
               <div class="min-w-full">
-                 <img src="images/office1.webp" alt="Xenium Corporate Office" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/003366/FFFFFF?text=Corporate+Office';">
+                 <img src="images/office1.webp" alt="Xenium Corporate Office" width="1200" height="600" loading="lazy" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/003366/FFFFFF?text=Corporate+Office';">
               </div>
               <!-- Slide 2 -->
               <div class="min-w-full">
-                 <img src="images/office_sh1.webp" alt="Office Reception Area" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/4A90E2/FFFFFF?text=Reception';">
+                 <img src="images/office_sh1.webp" alt="Office Reception Area" width="1200" height="600" loading="lazy" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/4A90E2/FFFFFF?text=Reception';">
               </div>
                <!-- Slide 3 -->
               <div class="min-w-full">
-                 <img src="images/office5.webp" alt="Conference Room" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F5A623/333333?text=Conference+Room';">
+                 <img src="images/office5.webp" alt="Conference Room" width="1200" height="600" loading="lazy" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F5A623/333333?text=Conference+Room';">
               </div>
                <!-- Slide 4 -->
               <div class="min-w-full">
-                 <img src="images/outside1.webp" alt="Operations Team" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/333333/FFFFFF?text=Operations+Team';">
+                 <img src="images/outside1.webp" alt="Operations Team" width="1200" height="600" loading="lazy" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/333333/FFFFFF?text=Operations+Team';">
               </div>
                <!-- Slide 5 -->
               <div class="min-w-full">
-                 <img src="images/warehouse.webp" alt="Distribution Warehouse" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F0F4F8/003366?text=Warehouse';">
+                 <img src="images/warehouse.webp" alt="Distribution Warehouse" width="1200" height="600" loading="lazy" class="w-full h-64 md:h-96 object-cover" onerror="this.src='https://placehold.co/1200x600/F0F4F8/003366?text=Warehouse';">
               </div>
            </div>
 
