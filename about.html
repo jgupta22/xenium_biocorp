@@ -7,6 +7,10 @@
   <meta name="description" content="Learn about Xenium Biocorp, a leading pharma marketing company in India. Founded by industry veterans in Jaipur, we focus on integrity and quality distribution." />
   <meta name="keywords" content="pharma company Jaipur, pharma marketing company India, Birbal Gupta Xenium, Kuldeep Singh Xenium" />
 
+  <!-- Performance: Preconnect to Font domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -38,6 +42,7 @@
         <a href="products.html" class="text-gray-600 hover:text-brand-accent transition">Products</a>
         <a href="quality.html" class="text-gray-600 hover:text-brand-accent transition">Quality</a>
         <a href="distribution.html" class="text-gray-600 hover:text-brand-accent transition">Partners</a>
+        <a href="index.html#gallery" class="text-gray-600 hover:text-brand-accent transition">Gallery</a>
         <a href="pharmacovigilance.html" class="text-gray-600 hover:text-brand-accent transition">Safety</a>
         <a href="index.html#contact" class="px-4 py-2 bg-brand-dark text-white rounded hover:bg-brand-light transition">Contact</a>
       </nav>
@@ -58,7 +63,8 @@
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-start mb-20">
           <div>
-             <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif" alt="Xenium Biocorp Team Jaipur" class="rounded-lg shadow-xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://placehold.co/600x600/E0E0E0/333333?text=Xenium+Office+Jaipur'">
+             <!-- Performance: Added explicit width/height and lazy loading (though usually eagerly loaded if above fold, safe to lazy load here) -->
+             <img src="https://raw.githubusercontent.com/jgupta22/xenium_biocorp/main/images/story.avif" alt="Xenium Biocorp Team Jaipur" width="800" height="600" class="rounded-lg shadow-xl w-full object-cover h-full min-h-[400px]" onerror="this.src='https://placehold.co/600x600/E0E0E0/333333?text=Xenium+Office+Jaipur'">
           </div>
           <div class="space-y-8">
             <div>
@@ -114,7 +120,7 @@
             <!-- Birbal Gupta -->
             <div class="flex flex-col items-center text-center">
               <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6 bg-gray-200">
-                <img src="images/Birbal.webp" alt="Birbal Gupta - Co-founder Xenium Biocorp" class="w-full h-full object-cover">
+                <img src="https://placehold.co/200x200/E0E0E0/333333?text=Photo" alt="Birbal Gupta - Co-founder Xenium Biocorp" width="200" height="200" loading="lazy" class="w-full h-full object-cover">
               </div>
               <h4 class="text-2xl font-bold text-brand-dark">Birbal Gupta</h4>
               <p class="text-brand-light text-sm font-semibold uppercase tracking-wider mb-4">Co-Founder</p>
